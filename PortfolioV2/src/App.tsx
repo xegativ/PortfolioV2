@@ -89,8 +89,8 @@ function App() {
             <div className="main">
                 <div className="main-left">
                     <div className="bio-wrap">
-                        <h1>Darren Lai</h1>
-                        <h2>Mechatronic Systems Engineering @ SFU</h2>
+                        <h1>Andrew Lai</h1>
+                        <h2>Computer Engineering @ SFU</h2>
                         <h3>
                             Striving to create a positive community around
                             myself for others, while also doing what makes me
@@ -233,40 +233,116 @@ function App() {
                     <div className="right-info">
                         <div id="experience" className="experience-wrap">
                             <p className="caps">EXPERIENCE</p>
-                            <div className="exp-box">
-                                <div className="exp-title">
-                                    <p>Founder, President</p>
-                                    <p>&nbsp;•&nbsp;</p>
-                                    <p>SubVision Robotics</p>
+                            <div>
+                                <div className="exp-box">
+                                    <div className="exp-title">
+                                        <p>Computing Team</p>
+                                        <p>&nbsp;•&nbsp;</p>
+                                        <p>SFU Satellite Design</p>
+                                    </div>
+                                    <p className="exp-date">
+                                        Nov 2023 - Present
+                                    </p>
                                 </div>
-                                <p className="description">Action 1</p>
-                            </div>
-                            <div className="exp-box">
-                                <div className="exp-title">
-                                    <p>2nd Year Rep.</p>
-                                    <p>&nbsp;•&nbsp;</p>
-                                    <p>SFU MSE Student Society</p>
+                                <div className="exp-box">
+                                    <div className="exp-title">
+                                        <p>Full Stack Developer, Lead UI/UX</p>
+                                        <p>&nbsp;•&nbsp;</p>
+                                        <p>UBC Data Science Club</p>
+                                    </div>
+                                    <p className="exp-date">
+                                        Sep 2023 - Present
+                                    </p>
+                                    <div className="point">
+                                        <p>&nbsp;•&nbsp;&nbsp;</p>
+                                        <p className="description">
+                                            Working on developing Pacific
+                                            Conference on Artificial
+                                            Intelligence 2024 web page and
+                                            redesigning UBC Data Science Club
+                                            main web page.
+                                        </p>
+                                    </div>
+                                    <div className="point">
+                                        <p>&nbsp;•&nbsp;&nbsp;</p>
+                                        <p className="description">
+                                            Utilized Agile and Scrum methodology
+                                            to enhance development efficiency.
+                                        </p>
+                                    </div>
+                                    <div className="tags">
+                                        <p>React</p>
+                                        <p>JavaScript</p>
+                                        <p>Tailwind CSS</p>
+                                        <p>MUI</p>
+                                        <p>Git</p>
+                                        <p>Figma</p>
+                                        <p>Trello</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="exp-box">
-                                <div className="exp-title">
-                                    <p>Analyst Intern</p>
-                                    <p>&nbsp;•&nbsp;</p>
-                                    <p>Foresight Canada</p>
+                                <div className="exp-box">
+                                    <div className="exp-title">
+                                        <p>Software Engineer</p>
+                                        <p>&nbsp;•&nbsp;</p>
+                                        <p>SFU SubVision Robotics</p>
+                                    </div>
+                                    <p className="exp-date">
+                                        Sep 2023 - Present
+                                    </p>
+                                    <div className="point">
+                                        <p>&nbsp;•&nbsp;</p>
+                                        <p className="description">
+                                            Working on developing Pacific
+                                            Conference on Artificial
+                                            Intelligence 2024 web page and
+                                            redesigning UBC Data Science Club
+                                            main web page.
+                                        </p>
+                                    </div>
+                                    <div className="point">
+                                        <p>&nbsp;•&nbsp;</p>
+                                        <p className="description">
+                                            Utilized React, Tailwind CSS, MUI,
+                                            alongside an Agile and Scrum
+                                            methodology to enhance development
+                                            efficiency.
+                                        </p>
+                                    </div>
+                                    <div className="tags">
+                                        <p>Python</p>
+                                        <p>ROS1</p>
+                                        <p>Linux</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="exp-box">
-                                <div className="exp-title">
-                                    <p>Team Lead</p>
-                                    <p>&nbsp;•&nbsp;</p>
-                                    <p>Team G.E.A.R.S.</p>
+                                <div className="exp-box">
+                                    <div className="exp-title">
+                                        <p>Technology Coordinator</p>
+                                        <p>&nbsp;•&nbsp;</p>
+                                        <p>SFU Finance Student Association</p>
+                                    </div>
+                                    <p className="exp-date">
+                                        Sep 2023 - Present
+                                    </p>
+                                    <div className="tags">
+                                        <p>WordPress</p>
+                                        <p>Figma</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="exp-box">
-                                <div className="exp-title">
-                                    <p>Mechanical Team Member</p>
-                                    <p>&nbsp;•&nbsp;</p>
-                                    <p>SFU Robot Soccer</p>
+                                <div className="exp-box">
+                                    <div className="exp-title">
+                                        <p>Research Software Engineer</p>
+                                        <p>&nbsp;•&nbsp;</p>
+                                        <p>UCW Labs, Farmer's Hive</p>
+                                    </div>
+                                    <p className="exp-date">
+                                        Jan 2023 - May 2023
+                                    </p>
+                                    <div className="tags">
+                                        <p>Python</p>
+                                        <p>NumPy</p>
+                                        <p>Pandas</p>
+                                        <p>REST API</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -295,13 +371,6 @@ function App() {
                                     various tasks underwater using a mechanical
                                     gripper arm.
                                 </p>
-                                <div className="project-tags">
-                                    <p>ROS1</p>
-                                    <p>Python</p>
-                                    <p>Raspberry Pi</p>
-                                    <p>Linux</p>
-                                    <p>SolidWorks</p>
-                                </div>
                             </div>
                             <div className="project-box">
                                 <p>Arduino Projects</p>

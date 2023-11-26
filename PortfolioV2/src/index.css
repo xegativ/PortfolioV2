@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 
-    overflow-x: hidden;
     /* 
     font-family: "Inter", sans-serif;
     font-family: "Space Grotesk", sans-serif; */
@@ -13,7 +12,9 @@
 }
 
 body {
-    background-color: black;
+    overflow-x: hidden;
+
+    background-color: #2172ff;
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00ADBD", endColorstr="#210CAE", GradientType=1 );
 }
@@ -113,14 +114,17 @@ div {
 
 .description {
     font-size: 14px;
+    line-height: 22px;
 }
 
-.project-tags {
+.tags {
     display: flex;
     flex-wrap: wrap;
+
+    margin-top: 10px;
 }
 
-.project-tags > p {
+.tags > p {
     font-size: 12px;
     background-color: rgba(255, 255, 255, 0.2);
 
@@ -172,35 +176,69 @@ div {
 }
 
 .caps {
-    font-family: "Onest", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 15px;
 }
 
 .caps > * {
-    font-family: "Onest", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 15px;
 }
 
-.exp-box {
+#experience > div > .exp-box {
+    opacity: 1;
+
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
     margin-top: 10px;
+    padding: 20px;
+
+    cursor: pointer;
+
+    transition: opacity 0.2s, background-color 0.2s, border 0.2s;
+}
+
+#experience > div:hover > .exp-box {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+#experience > div:hover > .exp-box:hover {
+    opacity: 1;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    background-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    transition: opacity 0.2s, background-color 0.2s, border 0.2s;
+}
+
+.exp-box > *:not(:last-child) {
+    padding-bottom: 10px;
 }
 
 .exp-title {
     display: flex;
 }
 
-.exp-box {
-    border: rgba(255, 255, 255, 0.2) 2px solid;
-    border-radius: 5px;
+.exp-date {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
 
-    background-color: rgba(255, 255, 255, 0.02);
-
-    margin-top: 10px;
-    padding: 20px;
-
-    transition: border 0.2s;
+    font-size: 14px;
 }
 
-.exp-box > *:not(:last-child) {
-    padding-bottom: 30px;
+.point {
+    display: flex;
+}
+
+.point:first-child {
+    margin-top: 10px;
 }
