@@ -312,6 +312,7 @@ function App() {
                                         <p>Python</p>
                                         <p>ROS1</p>
                                         <p>Linux</p>
+                                        <p>PyTorch</p>
                                     </div>
                                 </div>
                                 <div className="exp-box">
@@ -325,6 +326,7 @@ function App() {
                                     </p>
                                     <div className="tags">
                                         <p>WordPress</p>
+                                        <p>JavaScript</p>
                                         <p>Figma</p>
                                     </div>
                                 </div>
@@ -339,7 +341,6 @@ function App() {
                                     </p>
                                     <div className="tags">
                                         <p>Python</p>
-                                        <p>NumPy</p>
                                         <p>Pandas</p>
                                         <p>REST API</p>
                                     </div>
