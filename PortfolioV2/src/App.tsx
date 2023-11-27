@@ -20,9 +20,9 @@ function App() {
             const experiencesEl = document.getElementById("experience");
             const involveEl = document.getElementById("involvement");
 
-            const projectsTop = 0.475;
+            const projectsTop = 1;
             const experiencesTop = 0;
-            const involveTop = 0.8;
+            const involveTop = 2;
             if (experiencesEl && projectsEl && involveEl) {
                 console.log(
                     "Projects: ",
@@ -386,30 +386,27 @@ function App() {
                             </div>
                         </div>
                         <div id="projects" className="projects-wrap">
-                            <p className="caps">PROJECTS</p>
+                            <p className="caps section-title">PROJECTS</p>
                             <div className="project-box">
-                                <div>
-                                    <p>Holonomic Submersible (ROV)</p>
-                                    <p>SFU SubVision Robotics</p>
-                                </div>
+                                <div className="project-text">
+                                    <div>
+                                        <p className="project-title mysips">
+                                            mySips
+                                        </p>
+                                    </div>
 
-                                <p className="description">
-                                    I have been leading a team of talented
-                                    engineers in hopes of designing a holonomic
-                                    submersible w/ a mechanical gripper for the
-                                    2024 MateROV competition since May 2023.
-                                    <br></br>
-                                    <br></br>
-                                    This submersible is about 1mx1m,
-                                    manufactured using various materials
-                                    (aluminum, acrylic, ABS), and is navigated
-                                    using 6 thrusters/multisensor system.
-                                    Utilizing ROS (Robot Operating System) with
-                                    Python/Ubuntu/Pi4, we will be able to
-                                    control the submersible as it completes
-                                    various tasks underwater using a mechanical
-                                    gripper arm.
-                                </p>
+                                    <p className="description">
+                                        Website application that records and
+                                        stores drinks from your favourite
+                                        beverage locations.
+                                    </p>
+                                    <div className="tags">
+                                        <p>Python</p>
+                                        <p>Pandas</p>
+                                        <p>REST API</p>
+                                    </div>
+                                </div>
+                                <div className="project-img"></div>
                             </div>
                             <div className="project-box">
                                 <p>Arduino Projects</p>
@@ -425,7 +422,7 @@ function App() {
                             </div>
                         </div>
                         <div id="involvement" className="involvement-wrap">
-                            <p className="caps">INVOLVEMENT</p>
+                            <p className="caps section-title">INVOLVEMENT</p>
                         </div>
                     </div>
                 </div>{" "}
