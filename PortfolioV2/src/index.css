@@ -14,8 +14,8 @@
 body {
     overflow-x: hidden;
 
-    background: #322e2f;
-    background: linear-gradient(to left, #032756 0%, #0e3d63 100%);
+    background: #7c1bb9;
+    background: linear-gradient(270deg, #7c1bb9, #3b60e5);
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00ADBD", endColorstr="#210CAE", GradientType=1 );
 }
@@ -105,9 +105,9 @@ div {
 }
 
 .project-title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
-    font-family: "Space Grotesk", sans-serif;
+    /* font-family: "Space Grotesk", sans-serif; */
 }
 
 .project-img {
@@ -122,11 +122,12 @@ div {
 }
 
 .projects-wrap {
-    height: 80vh;
+    height: 100vh;
 }
 
 .project-box {
     display: flex;
+    justify-content: space-between;
 
     border: rgba(255, 255, 255, 0.2) 1px solid;
     border-radius: 5px;
@@ -169,8 +170,6 @@ div {
 .tags {
     display: flex;
     flex-wrap: wrap;
-
-    margin-top: 10px;
 }
 
 .tags > p {
@@ -181,6 +180,7 @@ div {
     padding-left: 7px;
     padding-right: 7px;
 
+    margin-top: 5px;
     margin-right: 5px;
 
     border-radius: 5px;
@@ -212,19 +212,47 @@ div {
 }
 
 .socials-wrap {
-    display: flex;
 }
 
-.socials-wrap > *:not(:first-child) {
+#resume-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.socials-box {
+    display: flex;
+    width: 180px;
+    padding: 10px;
+
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.socials-box > *:not(:first-child) {
     margin-left: 15px;
 }
 
-.socials-wrap > * {
+.socials-box > * {
     opacity: 0.6;
     transition: opacity 0.2s;
 }
 
-.socials-wrap > *:hover {
+.socials-box > p > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.socials-box > *:hover {
     opacity: 1;
     transition: opacity 0.2s;
 }
