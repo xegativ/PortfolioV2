@@ -20,6 +20,17 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00ADBD", endColorstr="#210CAE", GradientType=1 );
 }
 
+.background {
+    background-image: url(assets/bg-no-noise.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+}
+
 .main {
 }
 
@@ -54,6 +65,8 @@ h3 {
 
 p {
     font-family: "Inter", sans-serif;
+    z-index: 99;
+    position: relative;
 }
 
 .p-bold {
@@ -110,7 +123,7 @@ div {
     /* font-family: "Space Grotesk", sans-serif; */
 }
 
-.project-img {
+.img {
     height: auto;
     width: 300px;
 
@@ -121,43 +134,13 @@ div {
     border-radius: 5px;
 }
 
-.projects-wrap {
+.projects-height {
     height: 100vh;
 }
 
-.project-box {
+.project {
     display: flex;
     justify-content: space-between;
-
-    border: rgba(255, 255, 255, 0.2) 1px solid;
-    border-radius: 5px;
-
-    background-color: rgba(255, 255, 255, 0.02);
-
-    margin-top: 10px;
-    padding: 20px;
-
-    transition: border 0.2s;
-}
-
-.project-text > *:not(:last-child) {
-    padding-bottom: 10px;
-}
-
-.project-box > .project-text > p {
-    opacity: 0.6;
-    transition: opacity 0.2s;
-}
-
-.project-box:hover {
-    border: rgba(255, 255, 255, 0.8) 1px solid;
-
-    transition: border 0.2s;
-}
-
-.project-box:hover > p {
-    opacity: 1;
-    transition: opacity 0.2s;
 }
 
 .description {
@@ -186,11 +169,8 @@ div {
     border-radius: 5px;
 }
 
-.experience-wrap {
+.section-wrap {
     height: 120vh;
-}
-
-.bio-wrap {
 }
 
 .section-title {
@@ -209,9 +189,6 @@ div {
 
 .tob-wrap > div:not(:last-child) {
     padding-bottom: 5px;
-}
-
-.socials-wrap {
 }
 
 #resume-button {
@@ -298,7 +275,8 @@ div {
     text-transform: uppercase;
 }
 
-#experience > div > .exp-box {
+.section-wrap > div > .box,
+.section-wrap > div > .section-grid > .box {
     opacity: 1;
 
     border-radius: 5px;
@@ -315,17 +293,21 @@ div {
     cursor: pointer;
 
     transition: opacity 0.2s, background-color 0.2s, border 0.2s;
+
+    flex: 1;
 }
 
-#experience > div:hover > .exp-box {
+.section-wrap > div:hover > .box,
+.section-wrap > div:hover > .section-grid > .box {
     opacity: 0.5;
     transition: opacity 0.2s;
 }
 
-#experience > div:hover > .exp-box:hover {
+.section-wrap > div:hover > .box:hover,
+.section-wrap > div > .section-grid > .box:hover {
     opacity: 1;
 
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -333,20 +315,32 @@ div {
     transition: opacity 0.2s, background-color 0.2s, border 0.2s;
 }
 
-/* #experience > div:hover > .exp-box:hover > .point > p {
+.section-grid {
+    display: flex;
+}
+
+.section-grid > *:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* .section-wrap > div:hover > .box:hover > .point > p {
     color: rgba(255, 255, 255, 1);
 } */
 
-.exp-box > *:not(:last-child) {
+.box:not(.project) > *:not(:last-child) {
     padding-bottom: 10px;
 }
 
-.exp-title {
+.box:is(.project) > div > *:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+.title {
     display: flex;
     font-weight: 500;
 }
 
-.exp-date {
+.date {
     font-style: italic;
     font-weight: 300;
 

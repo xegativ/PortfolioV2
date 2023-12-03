@@ -86,6 +86,7 @@ function App() {
 
     return (
         <>
+            <div className="background"></div>
             <div className="main">
                 <div className="main-left">
                     <div className="bio-wrap">
@@ -272,28 +273,24 @@ function App() {
                 <div className="main-right">
                     <div className="left-space"></div>
                     <div className="right-info">
-                        <div id="experience" className="experience-wrap">
+                        <div id="experience" className="section-wrap">
                             <p className="caps section-title">EXPERIENCE</p>
                             <div>
-                                <div className="exp-box">
-                                    <div className="exp-title">
+                                <div className="box">
+                                    <div className="title">
                                         <p>Computing Team</p>
                                         <p>&nbsp;•&nbsp;</p>
                                         <p>SFU Satellite Design</p>
                                     </div>
-                                    <p className="exp-date">
-                                        Nov 2023 - Present
-                                    </p>
+                                    <p className="date">Nov 2023 - Present</p>
                                 </div>
-                                <div className="exp-box">
-                                    <div className="exp-title">
+                                <div className="box">
+                                    <div className="title">
                                         <p>Full Stack Developer, Lead UI/UX</p>
                                         <p>&nbsp;•&nbsp;</p>
                                         <p>UBC Data Science Club</p>
                                     </div>
-                                    <p className="exp-date">
-                                        Sep 2023 - Present
-                                    </p>
+                                    <p className="date">Sep 2023 - Present</p>
                                     <div className="point">
                                         <p>&nbsp;•&nbsp;&nbsp;</p>
                                         <p className="description">
@@ -321,15 +318,13 @@ function App() {
                                         <p>Trello</p>
                                     </div>
                                 </div>
-                                <div className="exp-box">
-                                    <div className="exp-title">
+                                <div className="box">
+                                    <div className="title">
                                         <p>Software Engineer</p>
                                         <p>&nbsp;•&nbsp;</p>
                                         <p>SFU SubVision Robotics</p>
                                     </div>
-                                    <p className="exp-date">
-                                        Sep 2023 - Present
-                                    </p>
+                                    <p className="date">Sep 2023 - Present</p>
                                     <div className="point">
                                         <p>&nbsp;•&nbsp;</p>
                                         <p className="description">
@@ -356,30 +351,26 @@ function App() {
                                         <p>PyTorch</p>
                                     </div>
                                 </div>
-                                <div className="exp-box">
-                                    <div className="exp-title">
+                                <div className="box">
+                                    <div className="title">
                                         <p>Technology Coordinator</p>
                                         <p>&nbsp;•&nbsp;</p>
                                         <p>SFU Finance Student Association</p>
                                     </div>
-                                    <p className="exp-date">
-                                        Sep 2023 - Present
-                                    </p>
+                                    <p className="date">Sep 2023 - Present</p>
                                     <div className="tags">
                                         <p>WordPress</p>
                                         <p>JavaScript</p>
                                         <p>Figma</p>
                                     </div>
                                 </div>
-                                <div className="exp-box">
-                                    <div className="exp-title">
+                                <div className="box">
+                                    <div className="title">
                                         <p>Research Software Engineer</p>
                                         <p>&nbsp;•&nbsp;</p>
                                         <p>UCW Labs, Farmer's Hive</p>
                                     </div>
-                                    <p className="exp-date">
-                                        Jan 2023 - May 2023
-                                    </p>
+                                    <p className="date">Jan 2023 - May 2023</p>
                                     <div className="tags">
                                         <p>Python</p>
                                         <p>Pandas</p>
@@ -388,139 +379,115 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div id="projects" className="projects-wrap">
+                        <div id="projects" className="section-wrap">
                             <p className="caps section-title">PROJECTS</p>
-                            <div className="project-box">
-                                <div className="project-text">
+                            <div>
+                                <div className="box project">
                                     <div>
-                                        <p className="project-title mysips">
-                                            mySips
-                                        </p>
+                                        <div className="title">
+                                            <p>mySips</p>
+                                        </div>
+                                        <div>
+                                            <p className="description">
+                                                Website application that records
+                                                and stores drinks from your
+                                                favourite beverage locations.
+                                            </p>
+                                        </div>
+                                        <div className="tags">
+                                            <p>React</p>
+                                            <p>TypeScript</p>
+                                            <p>HTML/CSS</p>
+                                            <p>Express</p>
+                                            <p>MySQL</p>
+                                            <p>Passport.JS</p>
+                                            <p>REST API</p>
+                                        </div>
                                     </div>
-
-                                    <p className="description">
-                                        Website application that records and
-                                        stores drinks from your favourite
-                                        beverage locations.
-                                    </p>
-                                    <div className="tags">
-                                        <p>React</p>
-                                        <p>TypeScript</p>
-                                        <p>Express</p>
-                                        <p>MySQL</p>
-                                        <p>REST API</p>
-                                        <p>Passport.js</p>
-                                    </div>
+                                    <div className="img"></div>
                                 </div>
-                                <div className="project-img"></div>
-                            </div>
-                            <div className="project-box">
-                                <div className="project-text">
-                                    <div>
-                                        <p className="project-title mysips">
-                                            DevPost Scraper
-                                        </p>
-                                    </div>
-
-                                    <p className="description">
-                                        Web scraper that collects submission
-                                        data from any given number of Devpost
-                                        hackathon pages and returns project
-                                        data.
-                                    </p>
-                                    <div className="tags">
-                                        <p>Python</p>
-                                        <p>SpaCy</p>
-                                        <p>NLP</p>
-                                        <p>Flask</p>
-                                    </div>
-                                </div>
-                                <div className="project-img"></div>
-                            </div>
-                            <div className="project-box">
-                                <div className="project-text">
-                                    <div>
-                                        <p className="project-title mysips">
-                                            OutfitLB
-                                        </p>
-                                    </div>
-
-                                    <p className="description">
-                                        Desktop app that stores and manages
-                                        clothing, outfits, and closets.
-                                    </p>
-                                    <div className="tags">
-                                        <p>Python</p>
-                                        <p>PyMongo</p>
-                                        <p>MongoDB</p>
-                                        <p>Tkinter</p>
-                                        <p>scikit-learn</p>
-                                    </div>
-                                </div>
-                                <div className="project-img"></div>
-                            </div>
-                            <div className="project-box">
-                                <div className="project-text">
-                                    <div>
-                                        <p className="project-title mysips">
-                                            mySips
-                                        </p>
-                                    </div>
-
-                                    <p className="description">
-                                        Website application that records and
-                                        stores drinks from your favourite
-                                        beverage locations.
-                                    </p>
-                                    <div className="tags">
-                                        <p>React</p>
-                                        <p>TypeScript</p>
-                                        <p>Express</p>
-                                        <p>MySQL</p>
-                                        <p>REST API</p>
-                                        <p>Passport.js</p>
-                                    </div>
-                                </div>
-                                <div className="project-img"></div>
-                            </div>
-                            <div className="project-box">
-                                <div className="project-text">
-                                    <div>
-                                        <p className="project-title mysips">
-                                            Crossy Road Matplotlib
-                                        </p>
-                                    </div>
-
-                                    <div className="tags">
-                                        <p>Python</p>
-                                        <p>Matplotlib</p>
-                                        <p>Tkinter</p>
-                                        <p>Raycasting</p>
-                                    </div>
-                                </div>
-                                <div className="project-img"></div>
-                            </div>
-                            <div className="project-box">
-                                <div className="project-text">
-                                    <div>
-                                        <p className="project-title mysips">
-                                            Red Wine Data Analysis
-                                        </p>
-                                    </div>
-
-                                    <div className="tags">
-                                        <p>R</p>
-                                        <p>Data Science</p>
-                                    </div>
-                                </div>
-                                <div className="project-img"></div>
                             </div>
                         </div>
-                        <div id="involvement" className="involvement-wrap">
+                        <div id="involvement" className="section-wrap">
                             <p className="caps section-title">INVOLVEMENT</p>
+                            <div>
+                                <div className="section-grid">
+                                    <div className="box project">
+                                        <div>
+                                            <div className="title">
+                                                <p>UI/UX Design</p>
+                                            </div>
+                                            <div>
+                                                <p className="description">
+                                                    Website application that
+                                                </p>
+                                            </div>
+                                            <div className="tags">
+                                                <p>React</p>
+                                                <p>TypeScript</p>
+                                                <p>HTML/CSS</p>
+                                                <p>Express</p>
+                                                <p>MySQL</p>
+                                                <p>Passport.JS</p>
+                                                <p>REST API</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="section-grid">
+                                    <div className="box project">
+                                        <div>
+                                            <div className="title">
+                                                <p>Photography</p>
+                                            </div>
+                                            <div>
+                                                <p className="description">
+                                                    Website application that
+                                                    records and stores drinks
+                                                    from your favourite beverage
+                                                    locations.
+                                                </p>
+                                            </div>
+                                            <div className="tags">
+                                                <p>React</p>
+                                                <p>TypeScript</p>
+                                                <p>HTML/CSS</p>
+                                                <p>Express</p>
+                                                <p>MySQL</p>
+                                                <p>Passport.JS</p>
+                                                <p>REST API</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="box project">
+                                        <div>
+                                            <div className="title">
+                                                <p>Graphic Design</p>
+                                            </div>
+                                            <div>
+                                                <p className="description">
+                                                    Website application that
+                                                    records and stores drinks
+                                                    from your favourite beverage
+                                                    locations.
+                                                </p>
+                                            </div>
+                                            <div className="tags">
+                                                <p>React</p>
+                                                <p>TypeScript</p>
+                                                <p>HTML/CSS</p>
+                                                <p>Express</p>
+                                                <p>MySQL</p>
+                                                <p>Passport.JS</p>
+                                                <p>REST API</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>{" "}
+                </div>
             </div>
         </>
     );
