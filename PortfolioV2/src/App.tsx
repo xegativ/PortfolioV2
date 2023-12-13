@@ -395,13 +395,76 @@ function App() {
                                             </p>
                                         </div>
                                         <div className="tags">
-                                            <p>React</p>
+                                            <p className="important">React</p>
                                             <p>TypeScript</p>
                                             <p>HTML/CSS</p>
                                             <p>Express</p>
                                             <p>MySQL</p>
                                             <p>Passport.JS</p>
                                             <p>REST API</p>
+                                        </div>
+                                    </div>
+                                    <div className="img"></div>
+                                </div>
+                                <div className="box project">
+                                    <div>
+                                        <div className="title">
+                                            <p>OutfitLB</p>
+                                        </div>
+                                        <div>
+                                            <p className="description">
+                                                Website application that records
+                                                and stores drinks from your
+                                                favourite beverage locations.
+                                            </p>
+                                        </div>
+                                        <div className="tags">
+                                            <p>Python</p>
+                                            <p>Tkinter</p>
+                                            <p>MongoDB</p>
+                                            <p>PyMongo</p>
+                                        </div>
+                                    </div>
+                                    <div className="img"></div>
+                                </div>
+
+                                <div className="box project">
+                                    <div>
+                                        <div className="title">
+                                            <p>Portfolio V1</p>
+                                        </div>
+                                        <div>
+                                            <p className="description">
+                                                Website application that records
+                                                and stores drinks from your
+                                                favourite beverage locations.
+                                            </p>
+                                        </div>
+                                        <div className="tags">
+                                            <p>JavaScript</p>
+                                            <p>History API</p>
+                                            <p>GSAP</p>
+                                        </div>
+                                    </div>
+                                    <div className="img"></div>
+                                </div>
+                                <div className="box project">
+                                    <div>
+                                        <div className="title">
+                                            <p>Pola Party</p>
+                                        </div>
+                                        <div>
+                                            <p className="description">
+                                                Website application that records
+                                                and stores drinks from your
+                                                favourite beverage locations.
+                                            </p>
+                                        </div>
+                                        <div className="tags">
+                                            <p>Python</p>
+                                            <p>Tkinter</p>
+                                            <p>MongoDB</p>
+                                            <p>PyMongo</p>
                                         </div>
                                     </div>
                                     <div className="img"></div>

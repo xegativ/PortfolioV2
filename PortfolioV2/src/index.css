@@ -58,7 +58,7 @@ h3 {
     font-size: 16px;
     line-height: 25px;
 
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
 
     margin-top: 20px;
 }
@@ -71,7 +71,7 @@ p {
 
 .p-bold {
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     opacity: 1;
 }
 
@@ -157,7 +157,6 @@ div {
 
 .tags > p {
     font-size: 12px;
-    background-color: rgba(255, 255, 255, 0.2);
 
     padding: 5px;
     padding-left: 7px;
@@ -167,6 +166,14 @@ div {
     margin-right: 5px;
 
     border-radius: 5px;
+}
+
+.tags > p:not(.important) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tags > p.important {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .section-wrap {
