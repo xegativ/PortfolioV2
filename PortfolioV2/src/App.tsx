@@ -92,6 +92,7 @@ function App() {
                     <div className="bio-wrap">
                         <h1>Andrew Lai</h1>
                         <h2>Computer Engineering @ SFU</h2>
+
                         <h3>
                             An engineer and designer constantly looking for
                             opportunities to grow my technological skills and
@@ -113,109 +114,118 @@ function App() {
                             <span className="p-bold">
                                 the.andrew.lai@gmail.com.
                             </span>
+                            <br></br>
+                            <br></br>
+                            This website takes inspiration from Brittany
+                            Chiang's portfolio due to its simplicity.
                         </h3>
-                    </div>
+                        <div className="tob-wrap">
+                            <div style={{ display: "flex" }}>
+                                {experienceVisible ? (
+                                    <>
+                                        <p style={{ marginRight: "11px" }}>•</p>
+                                        <p className="tob in-view caps">
+                                            <a
+                                                href="#experience"
+                                                onClick={(e) =>
+                                                    handleClick(e, "experience")
+                                                }
+                                            >
+                                                EXPERIENCE
+                                            </a>
+                                        </p>
+                                    </>
+                                ) : (
+                                    <>
+                                        <p style={{ marginRight: "10px" }}>
+                                            &nbsp;&nbsp;
+                                        </p>
+                                        <p className="tob caps">
+                                            <a
+                                                href="#experience"
+                                                onClick={(e) =>
+                                                    handleClick(e, "experience")
+                                                }
+                                            >
+                                                EXPERIENCE
+                                            </a>
+                                        </p>
+                                    </>
+                                )}
+                            </div>
+                            <div style={{ display: "flex" }}>
+                                {projectVisible ? (
+                                    <>
+                                        <p style={{ marginRight: "11px" }}>•</p>
+                                        <p className="tob in-view caps">
+                                            <a
+                                                href="#projects"
+                                                onClick={(e) =>
+                                                    handleClick(e, "projects")
+                                                }
+                                            >
+                                                PROJECTS
+                                            </a>
+                                        </p>
+                                    </>
+                                ) : (
+                                    <>
+                                        <p style={{ marginRight: "10px" }}>
+                                            &nbsp;&nbsp;
+                                        </p>
+                                        <p className="tob caps">
+                                            <a
+                                                href="#projects"
+                                                onClick={(e) =>
+                                                    handleClick(e, "projects")
+                                                }
+                                            >
+                                                PROJECTS
+                                            </a>
+                                        </p>
+                                    </>
+                                )}
+                            </div>
 
-                    <div className="tob-wrap">
-                        <div style={{ display: "flex" }}>
-                            {experienceVisible ? (
-                                <>
-                                    <p style={{ marginRight: "10px" }}>•</p>
-                                    <p className="tob in-view caps">
-                                        <a
-                                            href="#experience"
-                                            onClick={(e) =>
-                                                handleClick(e, "experience")
-                                            }
-                                        >
-                                            EXPERIENCE
-                                        </a>
-                                    </p>
-                                </>
-                            ) : (
-                                <>
-                                    <p style={{ marginRight: "10px" }}>
-                                        &nbsp;&nbsp;
-                                    </p>
-                                    <p className="tob caps">
-                                        <a
-                                            href="#experience"
-                                            onClick={(e) =>
-                                                handleClick(e, "experience")
-                                            }
-                                        >
-                                            EXPERIENCE
-                                        </a>
-                                    </p>
-                                </>
-                            )}
-                        </div>
-                        <div style={{ display: "flex" }}>
-                            {projectVisible ? (
-                                <>
-                                    <p style={{ marginRight: "10px" }}>•</p>
-                                    <p className="tob in-view caps">
-                                        <a
-                                            href="#projects"
-                                            onClick={(e) =>
-                                                handleClick(e, "projects")
-                                            }
-                                        >
-                                            PROJECTS
-                                        </a>
-                                    </p>
-                                </>
-                            ) : (
-                                <>
-                                    <p style={{ marginRight: "10px" }}>
-                                        &nbsp;&nbsp;
-                                    </p>
-                                    <p className="tob caps">
-                                        <a
-                                            href="#projects"
-                                            onClick={(e) =>
-                                                handleClick(e, "projects")
-                                            }
-                                        >
-                                            PROJECTS
-                                        </a>
-                                    </p>
-                                </>
-                            )}
-                        </div>
-
-                        <div style={{ display: "flex" }}>
-                            {involveVisible ? (
-                                <>
-                                    <p style={{ marginRight: "10px" }}>•</p>
-                                    <p className="tob in-view caps">
-                                        <a
-                                            href="#involvement"
-                                            onClick={(e) =>
-                                                handleClick(e, "involvement")
-                                            }
-                                        >
-                                            INVOLVEMENT
-                                        </a>
-                                    </p>
-                                </>
-                            ) : (
-                                <>
-                                    <p style={{ marginRight: "10px" }}>
-                                        &nbsp;&nbsp;
-                                    </p>
-                                    <p className="tob caps">
-                                        <a
-                                            href="#involvement"
-                                            onClick={(e) =>
-                                                handleClick(e, "involvement")
-                                            }
-                                        >
-                                            INVOLVEMENT
-                                        </a>
-                                    </p>
-                                </>
-                            )}
+                            <div style={{ display: "flex" }}>
+                                {involveVisible ? (
+                                    <>
+                                        <p style={{ marginRight: "11px" }}>•</p>
+                                        <p className="tob in-view caps">
+                                            <a
+                                                href="#involvement"
+                                                onClick={(e) =>
+                                                    handleClick(
+                                                        e,
+                                                        "involvement"
+                                                    )
+                                                }
+                                            >
+                                                INVOLVEMENT
+                                            </a>
+                                        </p>
+                                    </>
+                                ) : (
+                                    <>
+                                        <p style={{ marginRight: "10px" }}>
+                                            &nbsp;&nbsp;
+                                        </p>
+                                        <p className="tob caps">
+                                            <a
+                                                href="#involvement"
+                                                onClick={(e) =>
+                                                    handleClick(
+                                                        e,
+                                                        "involvement"
+                                                    )
+                                                }
+                                            >
+                                                INVOLVEMENT
+                                            </a>
+                                        </p>
+                                    </>
+                                )}
+                            </div>
                         </div>
                     </div>
 
@@ -278,16 +288,36 @@ function App() {
                             <div>
                                 <div className="box">
                                     <div className="title">
+                                        <p>Software Engineer</p>
+                                        <p>&nbsp;•&nbsp;</p>
+                                        <p>ConeTec</p>
+                                    </div>
+                                    <p className="date">Jan 2024 - Present</p>
+                                    <div className="tags">
+                                        <p>React</p>
+                                        <p>TypeScript</p>
+                                        <p>Electron.js</p>
+                                        <p>Redux</p>
+                                    </div>
+                                </div>
+                                <div className="box">
+                                    <div className="title">
                                         <p>Computing Team</p>
                                         <p>&nbsp;•&nbsp;</p>
                                         <p>SFU Satellite Design</p>
                                     </div>
                                     <p className="date">Nov 2023 - Present</p>
+                                    <div className="tags">
+                                        <p className="important">
+                                            Microcontrollers
+                                        </p>
+                                        <p className="important">Embedded C</p>
+                                    </div>
                                 </div>
                                 <div className="box">
                                     <div className="title">
                                         <p>Full Stack Developer, Lead UI/UX</p>
-                                        <p>&nbsp;•&nbsp;</p>
+                                        <p>&nbsp;•&nbsp;&nbsp;</p>
                                         <p>UBC Data Science Club</p>
                                     </div>
                                     <p className="date">Sep 2023 - Present</p>
@@ -326,7 +356,7 @@ function App() {
                                     </div>
                                     <p className="date">Sep 2023 - Present</p>
                                     <div className="point">
-                                        <p>&nbsp;•&nbsp;</p>
+                                        <p>&nbsp;•&nbsp;&nbsp;</p>
                                         <p className="description">
                                             Working on developing Pacific
                                             Conference on Artificial
@@ -336,7 +366,7 @@ function App() {
                                         </p>
                                     </div>
                                     <div className="point">
-                                        <p>&nbsp;•&nbsp;</p>
+                                        <p>&nbsp;•&nbsp;&nbsp;</p>
                                         <p className="description">
                                             Utilized React, Tailwind CSS, MUI,
                                             alongside an Agile and Scrum
@@ -377,6 +407,11 @@ function App() {
                                         <p>REST API</p>
                                     </div>
                                 </div>
+                                <div className="see-more-wrap">
+                                    <p className="fade-line-start"></p>
+                                    <p className="see-more">View more</p>
+                                    <p className="fade-line-end"></p>
+                                </div>
                             </div>
                         </div>
                         <div id="projects" className="section-wrap">
@@ -396,10 +431,13 @@ function App() {
                                         </div>
                                         <div className="tags">
                                             <p className="important">React</p>
-                                            <p>TypeScript</p>
+                                            <p className="important">
+                                                TypeScript
+                                            </p>
                                             <p>HTML/CSS</p>
                                             <p>Express</p>
-                                            <p>MySQL</p>
+                                            <p>Node.js</p>
+                                            <p className="important">MySQL</p>
                                             <p>Passport.JS</p>
                                             <p>REST API</p>
                                         </div>
@@ -413,9 +451,9 @@ function App() {
                                         </div>
                                         <div>
                                             <p className="description">
-                                                Website application that records
-                                                and stores drinks from your
-                                                favourite beverage locations.
+                                                Desktop application that stores
+                                                and manages clothing, outfits,
+                                                and closets.
                                             </p>
                                         </div>
                                         <div className="tags">
@@ -435,9 +473,9 @@ function App() {
                                         </div>
                                         <div>
                                             <p className="description">
-                                                Website application that records
-                                                and stores drinks from your
-                                                favourite beverage locations.
+                                                A single-paged application to
+                                                host all my projects and designs
+                                                in one place.
                                             </p>
                                         </div>
                                         <div className="tags">
@@ -455,19 +493,46 @@ function App() {
                                         </div>
                                         <div>
                                             <p className="description">
-                                                Website application that records
-                                                and stores drinks from your
-                                                favourite beverage locations.
+                                                A web application that
+                                                catalogues polaroid pictures.
                                             </p>
                                         </div>
                                         <div className="tags">
                                             <p>Python</p>
-                                            <p>Tkinter</p>
-                                            <p>MongoDB</p>
-                                            <p>PyMongo</p>
+                                            <p>Flask</p>
+                                            <p>PostgreSQL</p>
+                                            <p>Docker</p>
+                                            <p>Azure</p>
                                         </div>
                                     </div>
                                     <div className="img"></div>
+                                </div>
+                                <div className="box project">
+                                    <div>
+                                        <div className="title">
+                                            <p>DevPost Scraper</p>
+                                        </div>
+                                        <div>
+                                            <p className="description">
+                                                Web scraper that collects
+                                                submission data from any given
+                                                number of Devpost hackathon
+                                                pages and returns project data.
+                                            </p>
+                                        </div>
+                                        <div className="tags">
+                                            <p>Python</p>
+                                            <p>Flask</p>
+                                            <p>spaCy</p>
+                                            <p>NLP</p>
+                                        </div>
+                                    </div>
+                                    <div className="img"></div>
+                                </div>
+                                <div className="see-more-wrap">
+                                    <p className="fade-line-start"></p>
+                                    <p className="see-more">View more</p>
+                                    <p className="fade-line-end"></p>
                                 </div>
                             </div>
                         </div>
