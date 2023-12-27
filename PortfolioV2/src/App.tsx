@@ -114,10 +114,6 @@ function App() {
                             <span className="p-bold">
                                 the.andrew.lai@gmail.com.
                             </span>
-                            <br></br>
-                            <br></br>
-                            This website takes inspiration from Brittany
-                            Chiang's portfolio due to its simplicity.
                         </h3>
                         <div className="tob-wrap">
                             <div style={{ display: "flex" }}>
@@ -334,8 +330,10 @@ function App() {
                                     <div className="point">
                                         <p>&nbsp;•&nbsp;&nbsp;</p>
                                         <p className="description">
-                                            Utilized Agile and Scrum methodology
-                                            to enhance development efficiency.
+                                            Utilized React, Tailwind CSS, MUI,
+                                            alongside an Agile and Scrum
+                                            methodology to enhance development
+                                            efficiency.
                                         </p>
                                     </div>
                                     <div className="tags">
@@ -355,23 +353,23 @@ function App() {
                                         <p>SFU SubVision Robotics</p>
                                     </div>
                                     <p className="date">Sep 2023 - Present</p>
+
                                     <div className="point">
                                         <p>&nbsp;•&nbsp;&nbsp;</p>
                                         <p className="description">
-                                            Working on developing Pacific
-                                            Conference on Artificial
-                                            Intelligence 2024 web page and
-                                            redesigning UBC Data Science Club
-                                            main web page.
+                                            Used Python and ROS1 (ROSPy) in a
+                                            Linux environment to setup control
+                                            system for ROV using a game
+                                            controller.
                                         </p>
                                     </div>
+
                                     <div className="point">
                                         <p>&nbsp;•&nbsp;&nbsp;</p>
                                         <p className="description">
-                                            Utilized React, Tailwind CSS, MUI,
-                                            alongside an Agile and Scrum
-                                            methodology to enhance development
-                                            efficiency.
+                                            Instructed members on using Github
+                                            to aid in the development and
+                                            deployment process.
                                         </p>
                                     </div>
                                     <div className="tags">
@@ -388,6 +386,7 @@ function App() {
                                         <p>SFU Finance Student Association</p>
                                     </div>
                                     <p className="date">Sep 2023 - Present</p>
+
                                     <div className="tags">
                                         <p>WordPress</p>
                                         <p>JavaScript</p>
@@ -401,9 +400,30 @@ function App() {
                                         <p>UCW Labs, Farmer's Hive</p>
                                     </div>
                                     <p className="date">Jan 2023 - May 2023</p>
+
+                                    <div className="point">
+                                        <p>&nbsp;•&nbsp;&nbsp;</p>
+                                        <p className="description">
+                                            Predicted irrigation levels based
+                                            off of historical sensor data
+                                            provided by Farmer’s Hive and
+                                            OpenWeatherMap API
+                                        </p>
+                                    </div>
+
+                                    <div className="point">
+                                        <p>&nbsp;•&nbsp;&nbsp;</p>
+                                        <p className="description">
+                                            Designed and rigorously tested the
+                                            program with the objective of
+                                            delivering the service to clients
+                                            using Farmer’s Hive smart sensors
+                                        </p>
+                                    </div>
+
                                     <div className="tags">
                                         <p>Python</p>
-                                        <p>Pandas</p>
+                                        <p>Data Science</p>
                                         <p>REST API</p>
                                     </div>
                                 </div>
@@ -442,7 +462,7 @@ function App() {
                                             <p>REST API</p>
                                         </div>
                                     </div>
-                                    <div className="img"></div>
+                                    <div className="img mysips"></div>
                                 </div>
                                 <div className="box project">
                                     <div>
@@ -463,7 +483,7 @@ function App() {
                                             <p>PyMongo</p>
                                         </div>
                                     </div>
-                                    <div className="img"></div>
+                                    <div className="img outfitlb"></div>
                                 </div>
 
                                 <div className="box project">
@@ -484,7 +504,7 @@ function App() {
                                             <p>GSAP</p>
                                         </div>
                                     </div>
-                                    <div className="img"></div>
+                                    <div className="img folio"></div>
                                 </div>
                                 <div className="box project">
                                     <div>
@@ -505,7 +525,7 @@ function App() {
                                             <p>Azure</p>
                                         </div>
                                     </div>
-                                    <div className="img"></div>
+                                    <div className="img polaparty"></div>
                                 </div>
                                 <div className="box project">
                                     <div>
@@ -527,7 +547,7 @@ function App() {
                                             <p>NLP</p>
                                         </div>
                                     </div>
-                                    <div className="img"></div>
+                                    <div className="img devpost"></div>
                                 </div>
                                 <div className="see-more-wrap">
                                     <p className="fade-line-start"></p>

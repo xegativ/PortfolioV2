@@ -131,11 +131,14 @@ div {
 
 .img {
     height: auto;
-    width: 300px;
+    min-width: 300px;
 
     margin-left: 20px;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
     border-radius: 5px;
 }
@@ -424,4 +427,24 @@ div:hover > .section-grid > .box {
         rgba(255, 255, 255, 0.6),
         rgba(255, 0, 0, 0)
     );
+}
+
+.folio {
+    background-image: url("./assets/portofoliov1.png");
+}
+
+.mysips {
+    background-image: url("./assets/mysipstitle-orange.png");
+}
+
+.outfitlb {
+    background-image: url("./assets/outfit-title.png");
+}
+
+.polaparty {
+    background-image: url("./assets/pp.png");
+}
+
+.devpost {
+    background-image: url("./assets/devposttitle.png");
 }
