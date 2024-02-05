@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Point from "./components/Point";
 
 function App() {
     const [projectVisible, setProjectVisible] = useState(false);
@@ -90,29 +91,25 @@ function App() {
             <div className="main">
                 <div className="main-left">
                     <div className="bio-wrap">
-                        <h1>Andrew Lai</h1>
-                        <h2>Computer Engineering @ SFU</h2>
+                        <h1>Darren Lai</h1>
+                        <h2>Mechatronics Systems @ SFU</h2>
 
                         <h3>
-                            An engineer and designer constantly looking for
-                            opportunities to grow my technological skills and
-                            expertise.
+                            Self-starter, ambitious achiever, proactive pioneer.
                             <br></br>
-                            <br></br>
-                            With a wide array of interests in topics such
-                            as&nbsp;
+                            <br></br>I consistently strive to create a positive
+                            community around myself, while also doing what makes
+                            me happy: &nbsp;
                             <span className="p-bold">
-                                startups, machine and deep learning, embedded
-                                systems, and quantum computing,
+                                learning and engineering.
                             </span>{" "}
-                            I am always putting work into learning about this
-                            ever-changing world.
+                            In my free time, I enjoy ... and ...
                             <br></br>
                             <br></br>
                             Want to discuss research or have a project idea?
                             Don't hesitate to reach out at:&nbsp;
                             <span className="p-bold">
-                                the.andrew.lai@gmail.com.
+                                darrenlai9087@gmail.com.
                             </span>
                         </h3>
                         <div className="tob-wrap">
@@ -284,25 +281,56 @@ function App() {
                             <div>
                                 <div className="box">
                                     <div className="title">
-                                        <p>Software Engineer</p>
+                                        <p>Analyst Intern</p>
                                         <p>&nbsp;•&nbsp;</p>
-                                        <p>ConeTec</p>
+                                        <p>Foresight Canada</p>
                                     </div>
-                                    <p className="date">Jan 2024 - Present</p>
+                                    <p className="date">Jan 2023 - May 2023</p>
+                                    <Point
+                                        description={
+                                            "Researched and compiled agriculture cleantech organizations and startups into a value chain map."
+                                        }
+                                    />
+                                    <Point
+                                        description={
+                                            "Analysed and composed findings on the Canadian cleantech sector for correlations."
+                                        }
+                                    />
                                     <div className="tags">
                                         <p>React</p>
-                                        <p>TypeScript</p>
-                                        <p>Electron.js</p>
-                                        <p>Redux</p>
                                     </div>
                                 </div>
                                 <div className="box">
                                     <div className="title">
-                                        <p>Computing Team</p>
+                                        <p>President</p>
                                         <p>&nbsp;•&nbsp;</p>
-                                        <p>SFU Satellite Design</p>
+                                        <p>
+                                            SFU SubVision Marine Engineering
+                                            Club
+                                        </p>
                                     </div>
                                     <p className="date">Nov 2023 - Present</p>
+                                    <Point
+                                        description={
+                                            "In addition to having founded and fostered a community of 40+ members, with 20 currently developing an underwater ROV, managed and administered design processes and methods for streamlined efficiency of the team."
+                                        }
+                                    />
+
+                                    <Point
+                                        description={
+                                            "Implementing the use of ROS, Linux, Python, microprocessors, and various sensors for control and operation."
+                                        }
+                                    />
+                                    <Point
+                                        description={
+                                            "Designed high-level electrical diagrams, block diagrams, and the integration of submersible’s systems."
+                                        }
+                                    />
+                                    <Point
+                                        description={
+                                            "Utilized soldering equipment, SOLIDWORKS, DMM and other electrical testing equipment."
+                                        }
+                                    />
                                     <div className="tags">
                                         <p className="important">
                                             Microcontrollers
@@ -312,9 +340,12 @@ function App() {
                                 </div>
                                 <div className="box">
                                     <div className="title">
-                                        <p>Full Stack Developer, Lead UI/UX</p>
+                                        <p>2nd Year Representative</p>
                                         <p>&nbsp;•&nbsp;&nbsp;</p>
-                                        <p>UBC Data Science Club</p>
+                                        <p>
+                                            Mechatronic Systems Engineering
+                                            Student Society
+                                        </p>
                                     </div>
                                     <p className="date">Sep 2023 - Present</p>
                                     <div className="point">
@@ -348,7 +379,7 @@ function App() {
                                 </div>
                                 <div className="box">
                                     <div className="title">
-                                        <p>Software Engineer</p>
+                                        <p>Team Lead</p>
                                         <p>&nbsp;•&nbsp;</p>
                                         <p>SFU SubVision Robotics</p>
                                     </div>
@@ -381,7 +412,7 @@ function App() {
                                 </div>
                                 <div className="box">
                                     <div className="title">
-                                        <p>Technology Coordinator</p>
+                                        <p>Mechanical Team Member</p>
                                         <p>&nbsp;•&nbsp;</p>
                                         <p>SFU Finance Student Association</p>
                                     </div>
@@ -392,45 +423,6 @@ function App() {
                                         <p>JavaScript</p>
                                         <p>Figma</p>
                                     </div>
-                                </div>
-                                <div className="box">
-                                    <div className="title">
-                                        <p>Research Software Engineer</p>
-                                        <p>&nbsp;•&nbsp;</p>
-                                        <p>UCW Labs, Farmer's Hive</p>
-                                    </div>
-                                    <p className="date">Jan 2023 - May 2023</p>
-
-                                    <div className="point">
-                                        <p>&nbsp;•&nbsp;&nbsp;</p>
-                                        <p className="description">
-                                            Predicted irrigation levels based
-                                            off of historical sensor data
-                                            provided by Farmer’s Hive and
-                                            OpenWeatherMap API
-                                        </p>
-                                    </div>
-
-                                    <div className="point">
-                                        <p>&nbsp;•&nbsp;&nbsp;</p>
-                                        <p className="description">
-                                            Designed and rigorously tested the
-                                            program with the objective of
-                                            delivering the service to clients
-                                            using Farmer’s Hive smart sensors
-                                        </p>
-                                    </div>
-
-                                    <div className="tags">
-                                        <p>Python</p>
-                                        <p>Data Science</p>
-                                        <p>REST API</p>
-                                    </div>
-                                </div>
-                                <div className="see-more-wrap">
-                                    <p className="fade-line-start"></p>
-                                    <p className="see-more">View more</p>
-                                    <p className="fade-line-end"></p>
                                 </div>
                             </div>
                         </div>
