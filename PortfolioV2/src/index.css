@@ -9,6 +9,8 @@
 
     text-decoration: none;
     color: #ffffff;
+
+    scroll-behavior: smooth;
 }
 
 body {
@@ -376,14 +378,14 @@ div:hover > .section-grid > .box {
     margin-top: 10px;
 }
 
-.see-more-wrap {
+.view-more-wrap {
     display: flex;
 
     margin-top: 30px;
     justify-content: center;
 }
 
-.see-more {
+.view-more {
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
@@ -394,7 +396,7 @@ div:hover > .section-grid > .box {
     cursor: pointer;
 }
 
-.see-more:hover {
+.view-more:hover {
     color: rgba(255, 255, 255, 1);
     transition: 0.2s;
 }
