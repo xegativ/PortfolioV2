@@ -19,12 +19,8 @@ function Bio({ projectVisible, experienceVisible, involveVisible }) {
                 <br></br>
                 <br></br>
                 Want to discuss research or have a project idea? Don't hesitate
-                to reach out at:&nbsp;
-                <span className="p-bold">the.andrew.lai@gmail.com.</span>
-                <br></br>
-                <br></br>
-                This website takes inspiration from Brittany Chiang's portfolio
-                due to its simplicity.
+                to reach out at:
+                <span className="p-bold">&nbsp;the.andrew.lai@gmail.com.</span>
             </h3>
             <div className="tob-wrap">
                 <div style={{ display: "flex" }}>
