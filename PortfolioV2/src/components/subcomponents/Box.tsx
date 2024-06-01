@@ -5,6 +5,8 @@ interface IBox {
     bulletPoints?: string[];
     description?: string;
     tags?: string[];
+    showIcon?: boolean;
+    showImage?: boolean;
 }
 
 function Box({
@@ -14,53 +16,49 @@ function Box({
     bulletPoints,
     description,
     tags,
+    showIcon = false,
+    showImage = false,
 }: IBox) {
     return (
-        <div className="box">
-            <div className="box-left">
-                <div className="title">
-                    <p>{title}</p>
-                    {titleAddition && (
-                        <>
-                            <p>&nbsp;•&nbsp;&nbsp;</p>
-                            <p>{titleAddition}</p>
-                        </>
+        <div className="box-wrapper">
+            <div className="box">
+                <div className="box-left">
+                    <div className="title">
+                        <p>{title}</p>
+                        {titleAddition && (
+                            <>
+                                <p>&nbsp;•&nbsp;&nbsp;</p>
+                                <p>{titleAddition}</p>
+                            </>
+                        )}
+                    </div>
+                    {description && (
+                        <div>
+                            <p className="description">{description}</p>
+                        </div>
+                    )}
+                    {subTitle && <p className="date">{subTitle}</p>}
+                    {bulletPoints &&
+                        bulletPoints.map((bulletDescription) => {
+                            return (
+                                <div className="point">
+                                    <p>&nbsp;•&nbsp;&nbsp;</p>
+                                    <p className="description">
+                                        {bulletDescription}
+                                    </p>
+                                </div>
+                            );
+                        })}
+                    {tags && (
+                        <div className="tags">
+                            {tags.map((tagContent) => {
+                                return <p>{tagContent}</p>;
+                            })}
+                        </div>
                     )}
                 </div>
-                {description && (
-                    <div>
-                        <p className="description">{description}</p>
-                    </div>
-                )}
-                {subTitle && <p className="date">{subTitle}</p>}
-                {bulletPoints &&
-                    bulletPoints.map((bulletDescription) => {
-                        return (
-                            <div className="point">
-                                <p>&nbsp;•&nbsp;&nbsp;</p>
-                                <p className="description">
-                                    {bulletDescription}
-                                </p>
-                            </div>
-                        );
-                    })}
-                {tags && (
-                    <div className="tags">
-                        {tags.map((tagContent) => {
-                            return <p>{tagContent}</p>;
-                        })}
-                    </div>
-                )}
-            </div>
-            <div>
-                <div
-                    style={{
-                        backgroundColor: "black",
-                        width: "50px",
-                        height: "50px",
-                        borderRadius: "8px",
-                    }}
-                />
+                {showImage ? <div className="img"></div> : <></>}
+                {showIcon ? <div className="box-icon" /> : <></>}
             </div>
         </div>
     );

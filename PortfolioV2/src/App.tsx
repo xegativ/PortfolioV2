@@ -89,6 +89,7 @@ function App() {
                     />
                     <Socials />
                 </div>
+
                 <div className="main-right">
                     <div className="left-space"></div>
                     <div className="right-info">

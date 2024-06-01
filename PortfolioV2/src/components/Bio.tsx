@@ -1,7 +1,7 @@
 function Bio({ projectVisible, experienceVisible, involveVisible }) {
     return (
         <div className="bio-wrap">
-            <h1>Andrew Lai</h1>
+            <h1>N/A</h1>
             <h2>Computer Engineering @ SFU</h2>
 
             <h3>

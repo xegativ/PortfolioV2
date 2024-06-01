@@ -12,18 +12,21 @@ function Experience() {
                 "Utilized Agile and Scrum methodology to enhance development efficiency.",
             ],
             tags: ["React", "TypeScript", "Electron.js", "Redux"],
+            showIcon: true,
         },
         {
             title: "Research Software Engineer",
             titleAddition: "UCW Labs, Farmer's Hive",
             subTitle: "Sep 2023 - Present",
             tags: ["Python", "Pandas", "REST API"],
+            showIcon: true,
         },
         {
             title: "Graphic Designer and Creative Director",
             titleAddition: "P6",
             subTitle: "Sep 2023 - Present",
             tags: ["Adobe CC", "Blender"],
+            showIcon: true,
         },
     ];
     return (
