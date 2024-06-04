@@ -1,27 +1,32 @@
 function Bio({ projectVisible, experienceVisible, involveVisible }) {
     return (
         <div className="bio-wrap">
-            <h1>N/A</h1>
+            <h1 className="gradient-text">Andrew Lai</h1>
             <h2>Computer Engineering @ SFU</h2>
 
-            <h3>
-                An engineer and designer constantly looking for opportunities to
-                grow my technological skills and expertise.
-                <br></br>
-                <br></br>
-                With a wide array of interests in topics such as&nbsp;
-                <span className="p-bold">
-                    startups, machine and deep learning, embedded systems, and
-                    quantum computing,
-                </span>{" "}
-                I am always putting work into learning about this ever-changing
-                world.
-                <br></br>
-                <br></br>
-                Want to discuss research or have a project idea? Don't hesitate
-                to reach out at:
-                <span className="p-bold">&nbsp;the.andrew.lai@gmail.com.</span>
-            </h3>
+            <div className="bio-text">
+                <h3>
+                    An engineer and designer constantly looking for
+                    opportunities to grow my technological skills and expertise.
+                    <br></br>
+                    <br></br>
+                    With a wide array of interests in topics such as&nbsp;
+                    <span className="p-bold">
+                        startups, machine and deep learning, embedded systems,
+                        and quantum computing,
+                    </span>{" "}
+                    I am always putting work into learning about this
+                    ever-changing world.
+                    <br></br>
+                    <br></br>
+                    Want to discuss research or have a project idea? Don't
+                    hesitate to reach out at:
+                    <span className="p-bold">
+                        &nbsp;the.andrew.lai@gmail.com.
+                    </span>
+                </h3>
+            </div>
+
             <div className="tob-wrap">
                 <div style={{ display: "flex" }}>
                     {experienceVisible ? (

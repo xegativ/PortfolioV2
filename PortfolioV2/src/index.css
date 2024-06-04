@@ -17,7 +17,7 @@
 body {
     overflow-x: hidden;
 
-    background: rgb(15, 15, 15);
+    /* background: rgb(15, 15, 15); */
 }
 
 /* @media only screen and (max-width: 1612px) {
@@ -32,7 +32,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom center; */
 
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(7, 7, 12);
 
     width: 100vw;
     height: 100vh;
@@ -86,7 +86,7 @@ p {
 
 .p-bold {
     font-weight: 500;
-    color: rgba(255, 255, 255, 1);
+    /* color: rgba(255, 255, 255, 1); */
     opacity: 1;
 }
 
@@ -135,15 +135,16 @@ p {
 
     margin-left: 20px;
 
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0),
-        rgb(255, 255, 255)
-    );
+    /* background-image: ; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
 
     border-radius: 5px;
 
     margin: -20px;
+
 }
 
 .projects-height {
@@ -181,11 +182,11 @@ p {
 }
 
 .tags > p:not(.important) {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .tags > p.important {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .section-wrap {
@@ -297,13 +298,14 @@ p {
 .box-wrapper {
     padding: 1px;
     background-image: linear-gradient(
-        45deg,
-        rgb(255, 255, 255),
-        rgba(255, 255, 255, 0) 10%,
-        rgb(255, 255, 255) 100%
+        -15deg,
+        rgba(255, 255, 255, 0.3) -100%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.4) 100%
     );
     opacity: 100%;
     border-radius: 6px;
+    
 }
 
 .box {
@@ -311,27 +313,48 @@ p {
     justify-content: space-between;
 }
 
+div:has(> .box-icon) {
+    /* border: 1px red solid; */
+    overflow:hidden;
+}
+
 .box-icon {
-    background-color: white;
+    /* background-image: url('assets/icons/conetec-icon.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
     min-width: 50px;
     height: 50px;
+
     border-radius: 8px;
+/* 
+    box-shadow: 
+        0px -50px 30px 30px rgba(7, 7, 12, 1),
+        10px -50px 30px 30px rgba(7, 7, 12, 1),
+        -10px -50px 30px 30px rgba(7, 7, 12, 1),
+        0px 0px 8px 8px rgba(255, 255, 255, 0.5); */
 }
 
 div > .box-wrapper {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
+div > div:hover > .box-wrapper:has(> .box:not(:hover)) {
+    opacity: 0.4;
+    transition: 0.2s;
+}
+
+/* default box */
 div > div > .box,
 div > .section-grid > div > .box {
     opacity: 1;
 
     border-radius: 5px;
 
-    border: rgba(255, 255, 255, 0.2) 1px solid;
+    /* border: rgba(255, 255, 255, 0.1) 1px solid; */
 
     /* background-color: rgba(255, 255, 255, 0.05); */
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(7, 7, 12);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
@@ -343,22 +366,48 @@ div > .section-grid > div > .box {
     transition: opacity 0.2s, background-color 0.2s, border 0.2s;
 
     flex: 1;
+
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.02);
 }
 
-div:hover > div > .box,
+/* not hovered box */
+/* div:hover > div > .box,
 div:hover > .section-grid > div > .box {
-    opacity: 0.4;
-    transition: opacity 0.2s;
-}
 
+    border: rgba(255, 255, 255, 0.2) 1px solid;
+
+    background-color: rgb(38, 38, 38);
+    backdrop-filter: blur(5px);
+
+    transition: 0.2s;
+} */
+
+/* not hovered box elements */
+/* div:hover > div > .box > *,
+div:hover > .section-grid > div > .box > * {
+    opacity: 0.4;
+
+    transition: 0.2s;
+} */
+
+/* hovered box */
 .section-wrap > div:hover > div > .box:hover,
 .section-wrap > div > .section-grid > div > .box:hover {
     opacity: 1;
 
-    border: rgba(255, 255, 255, 0.23) 1px solid;
+    border: rgba(255, 255, 255, 0.2) 1px solid;
 
-    background-color: rgb(60, 60, 60);
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    background-color: rgb(65, 65, 65);
+    backdrop-filter: blur(5px);
 
+    transition: 0.2s;
+}
+
+/* hovered box elements */
+.section-wrap > div:hover > div > .box:hover > *,
+.section-wrap > div > .section-grid > div > .box:hover > * {
+    opacity: 1;
     transition: 0.2s;
 }
 
@@ -377,6 +426,11 @@ div:hover > .section-grid > div > .box {
 /* .section-wrap > div:hover > .box:hover > .point > p {
     color: rgba(255, 255, 255, 1);
 } */
+
+.box-left {
+    /* border: 1px red solid; */
+    margin-right: 10px;
+}
 
 .box:not(.project) > .box-left > *:not(:last-child) {
     padding-bottom: 10px;
@@ -439,7 +493,7 @@ div:hover > .section-grid > div > .box {
     margin-top: 10px;
 
     width: 100px;
-    height: 2px;
+    height: 1px;
 
     /* background: rgb(255, 255, 255); */
     background: linear-gradient(
@@ -453,7 +507,7 @@ div:hover > .section-grid > div > .box {
     margin-top: 10px;
 
     width: 100px;
-    height: 2px;
+    height: 1px;
 
     background: linear-gradient(
         to right,
@@ -481,3 +535,33 @@ div:hover > .section-grid > div > .box {
 .devpost {
     background-image: url("./assets/devposttitle.png");
 }
+
+
+.gradient-text {
+  background-image: linear-gradient(80deg,#a5b1b9 10%, #ffffff 40%, #abb9bb 80%, #b8c2c7 100%);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+
+  display:inline-flex;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+
+  /* font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent; */
+}
+
+.boldest {
+    font-weight: 900;
+}
+
+/* .bio-text {
+    box-shadow: 0 1px 0 #ffffff32 inset;
+} */
