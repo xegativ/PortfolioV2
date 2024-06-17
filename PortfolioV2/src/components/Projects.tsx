@@ -22,34 +22,42 @@ function Projects() {
         {
             title: "Devpost Scraper",
             description:
-                "Website application that records and stores drinks from your favourite beverage locations.",
-            tags: [
-                "React",
-                "TypeScript",
-                "HTML/CSS",
-                "Express",
-                "Node.js",
-                "MySQL",
-                "Passport.JS",
-            ],
+                "Web scraper that collects submission data from any given number of Devpost hackathon pages and returns project data.",
+            tags: ["Python", "spaCy", "NLP", "Flask"],
             showImage: true,
             imageName: "devpost-proj.png",
         },
         {
-            title: "Pola Party",
+            title: "Portfolio V1",
             description:
-                "Website application that records and stores drinks from your favourite beverage locations.",
-            tags: [
-                "React",
-                "TypeScript",
-                "HTML/CSS",
-                "Express",
-                "Node.js",
-                "MySQL",
-                "Passport.JS",
-            ],
+                "A poorly coded single-paged application to host all my projects and designs in one place. ",
+            tags: ["JavaScript", "HTML/CSS", "History API", "GSAP"],
             showImage: true,
-            imageName: "polaparty-proj.png",
+            imageName: "portfoliov1-proj.png",
+        },
+        // {
+        //     title: "Pola Party",
+        //     description:
+        //         "Website application that records and stores drinks from your favourite beverage locations.",
+        //     tags: [
+        //         "React",
+        //         "TypeScript",
+        //         "HTML/CSS",
+        //         "Express",
+        //         "Node.js",
+        //         "MySQL",
+        //         "Passport.JS",
+        //     ],
+        //     showImage: true,
+        //     imageName: "polaparty-proj.png",
+        // },
+        {
+            title: "OutfitLB",
+            description:
+                "Desktop app that stores and manages clothing, outfits, and closets.",
+            tags: ["Python", "MongoDB", "PyMongo", "Tkinter", "scikit-learn"],
+            showImage: true,
+            imageName: "outfitlb-proj.png",
         },
     ];
 

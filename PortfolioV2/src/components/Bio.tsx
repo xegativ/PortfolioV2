@@ -35,9 +35,9 @@ function Bio({ projectVisible, experienceVisible, involveVisible }) {
                             <p className="tob in-view caps">
                                 <a
                                     href="#experience"
-                                    onClick={(e) =>
-                                        handleClick(e, "experience")
-                                    }
+                                    // onClick={(e) =>
+                                    //     handleClick(e, "experience")
+                                    // }
                                 >
                                     EXPERIENCE
                                 </a>
@@ -49,9 +49,9 @@ function Bio({ projectVisible, experienceVisible, involveVisible }) {
                             <p className="tob caps">
                                 <a
                                     href="#experience"
-                                    onClick={(e) =>
-                                        handleClick(e, "experience")
-                                    }
+                                    // onClick={(e) =>
+                                    //     handleClick(e, "experience")
+                                    // }
                                 >
                                     EXPERIENCE
                                 </a>
@@ -66,7 +66,7 @@ function Bio({ projectVisible, experienceVisible, involveVisible }) {
                             <p className="tob in-view caps">
                                 <a
                                     href="#projects"
-                                    onClick={(e) => handleClick(e, "projects")}
+                                    // onClick={(e) => handleClick(e, "projects")}
                                 >
                                     PROJECTS
                                 </a>
@@ -78,7 +78,7 @@ function Bio({ projectVisible, experienceVisible, involveVisible }) {
                             <p className="tob caps">
                                 <a
                                     href="#projects"
-                                    onClick={(e) => handleClick(e, "projects")}
+                                    // onClick={(e) => handleClick(e, "projects")}
                                 >
                                     PROJECTS
                                 </a>

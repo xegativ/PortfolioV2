@@ -4,19 +4,19 @@ import ViewMore from "./subcomponents/ViewMore";
 function Experience() {
     const experienceData = [
         {
-            title: "Software Engineer",
+            title: "Software Developer Co-op",
             titleAddition: "ConeTec",
             subTitle: "Jan 2024 - Present",
-            bulletPoints: [
-                "Working on developing Pacific Conference on Artificial Intelligence 2024 web page and redesigning UBC Data Science Club main web page.",
-                "Utilized Agile and Scrum methodology to enhance development efficiency.",
-            ],
-            tags: ["React", "TypeScript", "Electron.js", "Redux"],
+            // bulletPoints: [
+            //     "Working on developing Pacific Conference on Artificial Intelligence 2024 web page and redesigning UBC Data Science Club main web page.",
+            //     "Utilized Agile and Scrum methodology to enhance development efficiency.",
+            // ],
+            tags: ["React", "TypeScript", "Electron.js", "Redux", "Playwright"],
             showIcon: true,
             iconName: "conetec-icon.jpg",
         },
         {
-            title: "Research Software Engineer",
+            title: "Research Software Engineer Intern",
             titleAddition: "UCW Labs, Farmer's Hive",
             subTitle: "Sep 2023 - Present",
             tags: ["Python", "Pandas", "REST API"],
