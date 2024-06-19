@@ -15,7 +15,7 @@ function Involvement() {
                         imageName="xegativ-grid.png"
                         imageWidth="-webkit-fill-available"
                         hideLeft
-                        boxHeight="500px"
+                        boxHeight="400px"
                         imageTitleText="Graphic Design"
                     />
                 </div>
@@ -25,7 +25,7 @@ function Involvement() {
                         titleTag="Clubs"
                         imageTitleText="Clubs"
                         imageName="VSA-poster.png"
-                        boxHeight="300px"
+                        boxHeight="200px"
                         hideLeft
                         showImage
                         imageWidth="-webkit-fill-available"
@@ -35,7 +35,7 @@ function Involvement() {
                         titleTag="Photography"
                         imageTitleText="Photography"
                         imageName="test2.jpg"
-                        boxHeight="300px"
+                        boxHeight="200px"
                         hideLeft
                         showImage
                         imageWidth="-webkit-fill-available"

@@ -91,12 +91,11 @@ function App() {
                 </div>
 
                 <div className="main-right">
-                    <div className="left-space"></div>
-                    <div className="right-info">
-                        <Experience />
-                        <Projects />
-                        <Involvement />
-                    </div>
+                    {/* <div className="right-info"> */}
+                    <Experience />
+                    <Projects />
+                    <Involvement />
+                    {/* </div> */}
                 </div>
             </div>
         </>

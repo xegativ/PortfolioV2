@@ -3,11 +3,27 @@
 :root {
     --color-black: rgb(7, 7, 12);
     --color-black-light: rgb(40, 40, 45);
-    --color-grey: rgba(255, 255, 255, 0.716);
-    --color-dark-grey: rgba(255, 255, 255, 0.15);
-    --color-white: rgba(255, 255, 255, 1);
+    --color-grey: rgba(239, 244, 255, 0.8);
+    --color-dark-grey: rgba(223, 242, 255, 0.15);
+    --color-dark-light-grey: rgba(238, 245, 254, 0.4);
+    --color-white: rgb(239, 247, 254);
 
+    --font-size-small-v2: 13px;
     --font-size-small: 14px;
+    --font-size-medium: 16px; 
+    --font-size-large: 22px;
+    --font-size-xlarge: 28px;
+    --font-size-xxlarge: 50px;
+   
+    
+
+    --page-margin-side: 15vw;
+
+    --left-area: 30vw;
+    --space-between-left-right: 5vw;
+    --left-right-space: calc(var(--left-area) + var( --space-between-left-right));
+    
+    --right-area: 35vw;
   }
 
 * {
@@ -27,15 +43,10 @@
 
 body {
     overflow-x: hidden;
-
-    /* background: rgb(15, 15, 15); */
 }
 
-/* @media only screen and (max-width: 1612px) {
-    * {
-        color: black;
-    }
-} */
+
+
 
 .background {
     /* background-image: url(assets/blue-bg.png);
@@ -44,6 +55,7 @@ body {
     background-position: bottom center; */
 
     background-color: var(--color-black);
+
 
     width: 100vw;
     height: 100vh;
@@ -54,8 +66,8 @@ body {
 }
 
 .main {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: var(--page-margin-side);
+    padding-right: var(--page-margin-side);
 }
 
 svg {
@@ -67,13 +79,13 @@ h1 {
     /* font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
         Helvetica Neue, Arial, sans-serif; */
     font-family: "Inter", sans-serif;
-    font-size: 50px;
+    font-size: var(--font-size-xxlarge);
 }
 
 h2 {
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 22px;
+    font-size: var(--font-size-large);
 
     margin-top: 10px;
 }
@@ -81,7 +93,7 @@ h2 {
 h3 {
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     line-height: 25px;
 
     color: var(--color-grey);
@@ -93,6 +105,7 @@ p {
     font-family: "Inter", sans-serif;
     z-index: 99;
     position: relative;
+    font-size: var(--font-size-medium)
 }
 
 .p-bold {
@@ -101,13 +114,15 @@ p {
 }
 
 .main-right {
-    display: flex;
+    /* display: flex; */
+    width: var(--right-area);
+    float: right;
 }
 
 .main-left {
     position: fixed;
 
-    width: 35vw;
+    width: var(--left-area);
 
     padding-top: 100px;
     padding-bottom: 100px;
@@ -123,16 +138,16 @@ p {
     margin-top: 30px;
 }
 
-.left-space {
-    width: 50vw;
-}
+/* .left-space {
+    width: var(--left-right-space);
+} */
 
 .right-info {
-    width: 50vw;
+    /* width: 50vw; */
 }
 
 .project-title {
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     font-weight: 600;
 }
 
@@ -234,7 +249,7 @@ p {
 }
 
 .section-wrap {
-    width: 40vw;
+   
     padding-top: 100px;
     /* height: 120vh; */
 }
@@ -243,7 +258,7 @@ p {
     line-height: 20px;
     letter-spacing: 1.3px;
 
-    font-size: 13px;
+    font-size: var(--font-size-small-v2);
     font-weight: 600;
 
     color: rgba(255, 255, 255, 0.6);
@@ -310,7 +325,7 @@ p {
     line-height: 20px;
     letter-spacing: 1.3px;
 
-    font-size: 13px;
+    font-size: var(--font-size-small-v2);
     font-weight: 600;
 }
 
@@ -407,7 +422,7 @@ div > .section-grid > div > .box {
 
     padding: 20px;
 
-    /* cursor: pointer; */
+    cursor: pointer;
 
     transition: opacity 0.2s, background-color 0.2s, border 0.2s;
 
@@ -492,7 +507,7 @@ div:hover > .section-grid > div > .box > * {
     font-style: italic;
     font-weight: 300;
 
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-dark-light-grey);
 
     font-size: var(--font-size-small);
 }
@@ -640,14 +655,14 @@ div:hover > .section-grid > div > .box > * {
 }
 
 .title-tag p {
-    font-size: 14px;
+    font-size: var(--font-size-small);
 }
 
 .img-title-text {
     position: absolute;
     bottom: 20px;
 
-    font-size: 28px;
+    font-size: var(--font-size-xlarge);
     font-weight: bold;
 
     line-height: normal;
