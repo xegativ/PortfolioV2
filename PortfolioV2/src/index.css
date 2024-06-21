@@ -8,12 +8,12 @@
     --color-dark-light-grey: rgba(238, 245, 254, 0.4);
     --color-white: rgb(239, 247, 254);
 
-    --font-size-small-v2: 13px;
-    --font-size-small: 14px;
-    --font-size-medium: 16px; 
-    --font-size-large: 22px;
+    --font-size-small-v2: 0.8rem;
+    --font-size-small: 0.9rem;
+    --font-size-medium: 1rem; 
+    --font-size-large: 1.3rem;
     --font-size-xlarge: 28px;
-    --font-size-xxlarge: 50px;
+    --font-size-xxlarge: 3.2rem;
    
     
 
@@ -47,6 +47,7 @@ body {
 
 
 
+  
 
 .background {
     /* background-image: url(assets/blue-bg.png);
@@ -136,6 +137,21 @@ p {
 
 .main-left > div:not(:first-child) {
     margin-top: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+    .main-left {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .main-right {
+        width: 100%;
+    }
+    .tob-wrap {
+        display: none;
+    }
 }
 
 /* .left-space {
