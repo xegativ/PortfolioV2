@@ -12,7 +12,7 @@ function Involvement() {
                         hideHoverEffects
                         titleTag="Graphic Design"
                         showImage
-                        imageName="xegativ-grid.png"
+                        imageName="involvement-xe.png"
                         imageWidth="-webkit-fill-available"
                         hideLeft
                         boxHeight="400px"
@@ -24,7 +24,7 @@ function Involvement() {
                         hideHoverEffects
                         titleTag="Clubs"
                         imageTitleText="Clubs"
-                        imageName="VSA-poster.png"
+                        imageName="involvement-vsa.png"
                         boxHeight="200px"
                         hideLeft
                         showImage
@@ -34,7 +34,7 @@ function Involvement() {
                         hideHoverEffects
                         titleTag="Photography"
                         imageTitleText="Photography"
-                        imageName="test2.jpg"
+                        imageName="involvement-roofing.jpg"
                         boxHeight="200px"
                         hideLeft
                         showImage
