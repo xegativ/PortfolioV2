@@ -53,7 +53,7 @@ function Experience() {
                         return <Box {...experienceItem} />;
                     })}
             </div>
-            <ViewMore />
+            <ViewMore linkTo="/experience" />
         </div>
     );
 }

@@ -43,6 +43,12 @@ body {
   overflow-x: hidden;
 }
 
+.more-section {
+  margin-left: var(--page-margin-side);
+  margin-right: var(--page-margin-side);
+  padding-top: 100px;
+}
+
 .bio-pfp-wrapper {
   width: 130px;
   height: 130px;
@@ -595,16 +601,35 @@ div:hover > .section-grid > div > .box > * {
   padding-left: 15px;
   padding-right: 15px;
 
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-grey);
   transition: 0.2s;
 
   cursor: pointer;
+
+  font-size: var(--font-size-small);
+  font-family: "Inter", sans-serif;
 }
 
 .view-more:hover {
   color: rgba(255, 255, 255, 1);
   transition: 0.2s;
 }
+
+
+.back-button {
+  color: var(--color-grey);
+  transition: 0.2s;
+
+  cursor: pointer;
+
+  font-size: var(--font-size-small);
+  font-family: "Inter", sans-serif;
+}
+
+.back-button:hover {
+  color: rgb(255, 255, 255);
+}
+
 
 .fade-line-start {
   margin-top: 10px;
@@ -615,7 +640,7 @@ div:hover > .section-grid > div > .box > * {
   /* background: rgb(255, 255, 255); */
   background: linear-gradient(
     to left,
-    rgba(255, 255, 255, 0.6),
+    var(--color-grey),
     rgba(255, 0, 0, 0)
   );
 }
@@ -628,7 +653,7 @@ div:hover > .section-grid > div > .box > * {
 
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.6),
+    var(--color-grey),
     rgba(255, 0, 0, 0)
   );
 }
