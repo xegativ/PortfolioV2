@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 
-interface IBox {
+export interface IBox {
     // Title line
     title?: string;
     titleAddition?: string;

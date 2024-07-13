@@ -1,4 +1,4 @@
-import Box from "./subcomponents/Box";
+import Box from "./Box/Box";
 
 function Socials() {
     return (

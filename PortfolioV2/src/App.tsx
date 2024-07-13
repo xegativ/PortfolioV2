@@ -1,23 +1,31 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/pages/Home";
-import ExperienceMore from "./components/pages/ExperienceMore";
-import ProjectsMore from "./components/pages/ProjectsMore";
+import PageMore from "./components/pages/PageMore";
+import { experienceData, projectData } from "./components/data/data";
 
 function App() {
     return (
-        <>
-            <Routes>
-                <Route path="/" element={<Home></Home>} />
-                <Route
-                    path="/experience"
-                    element={<ExperienceMore></ExperienceMore>}
-                />
-                <Route
-                    path="/projects"
-                    element={<ProjectsMore></ProjectsMore>}
-                />
-            </Routes>
-        </>
+        <Routes>
+            <Route path="/" element={<Home></Home>} />
+            <Route
+                path="/experience"
+                element={
+                    <PageMore
+                        sectionName="Experience"
+                        boxesData={experienceData}
+                    ></PageMore>
+                }
+            />
+            <Route
+                path="/projects"
+                element={
+                    <PageMore
+                        sectionName="Projects"
+                        boxesData={projectData}
+                    ></PageMore>
+                }
+            />
+        </Routes>
     );
 }
 

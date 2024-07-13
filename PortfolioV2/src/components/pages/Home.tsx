@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Bio from "../Bio";
-import Socials from "../Socials";
-import Experience from "../Experience";
-import Involvement from "../Involvement";
-import Projects from "../Projects";
+import Bio from "../subcomponents/Bio";
+import { experienceData, projectData } from "../data/data";
+import Section from "../subcomponents/Section";
+import Socials from "../subcomponents/Socials";
+import Involvement from "../subcomponents/Involvement";
 
 function Home() {
     const [projectVisible, setProjectVisible] = useState(false);
@@ -49,6 +49,7 @@ function Home() {
                         experiencesTop &&
                     projectsEl.getBoundingClientRect().top > projectsTop
                 ) {
+                    window.location.hash = "#experience";
                     setExperienceVisible(true);
                 } else {
                     setExperienceVisible(false);
@@ -58,14 +59,18 @@ function Home() {
                     projectsEl.getBoundingClientRect().top <= projectsTop &&
                     involveEl.getBoundingClientRect().top > involveTop
                 ) {
+                    window.location.hash = "#projects";
                     setProjectVisible(true);
                 } else {
+                    // window.location.hash = "";
                     setProjectVisible(false);
                 }
 
                 if (involveEl.getBoundingClientRect().top <= involveTop) {
+                    window.location.hash = "#involvement";
                     setInvolveVisible(true);
                 } else {
+                    // window.location.hash = "";
                     setInvolveVisible(false);
                 }
             }
@@ -76,6 +81,11 @@ function Home() {
             window.removeEventListener("scroll", onScroll);
         };
     }, []);
+
+    const sectionContent = [
+        { sectionName: "experience", boxesData: experienceData.slice(0, 3) },
+        { sectionName: "projects", boxesData: projectData.slice(0, 4) },
+    ];
 
     return (
         <>
@@ -91,11 +101,15 @@ function Home() {
                 </div>
 
                 <div className="main-right">
-                    {/* <div className="right-info"> */}
-                    <Experience />
-                    <Projects />
+                    {sectionContent.map((sectionItem) => {
+                        return (
+                            <Section
+                                sectionName={sectionItem.sectionName}
+                                boxesData={sectionItem.boxesData}
+                            />
+                        );
+                    })}
                     <Involvement />
-                    {/* </div> */}
                 </div>
             </div>
         </>

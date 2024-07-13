@@ -108,9 +108,9 @@ function Bio({
                             <p className="tob in-view caps">
                                 <a
                                     href="#involvement"
-                                    onClick={(e) =>
-                                        handleClick(e, "involvement")
-                                    }
+                                    // onClick={(e) =>
+                                    //     handleClick(e, "involvement")
+                                    // }
                                 >
                                     INVOLVEMENT
                                 </a>
@@ -122,9 +122,9 @@ function Bio({
                             <p className="tob caps">
                                 <a
                                     href="#involvement"
-                                    onClick={(e) =>
-                                        handleClick(e, "involvement")
-                                    }
+                                    // onClick={(e) =>
+                                    //     handleClick(e, "involvement")
+                                    // }
                                 >
                                     INVOLVEMENT
                                 </a>
