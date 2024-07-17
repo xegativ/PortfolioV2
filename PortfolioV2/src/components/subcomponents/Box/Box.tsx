@@ -1,5 +1,5 @@
-import { useState } from "react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export interface IBox {
     // Title line
@@ -30,7 +30,7 @@ export interface IBox {
     hideLeft?: boolean;
     /** Hiding hover effects */
     hideHoverEffects?: boolean;
-
+    to?: string;
     styles?: React.CSSProperties;
 }
 
@@ -54,14 +54,22 @@ function Box({
     hideRight = false,
     hideLeft = false,
     hideHoverEffects = false,
+    to,
     styles,
 }: IBox) {
+    const navigate = useNavigate();
+
+    const onClickBoxHandler = () => {
+        navigate(to ?? "/");
+    };
+
     return (
         <div
             className={`box-wrapper ${
                 hideHoverEffects ? "hide-hover-effects" : ""
             }`}
             style={boxWidth ? { width: boxWidth } : { width: "100%" }}
+            onClick={to ? onClickBoxHandler : undefined}
         >
             <div className="box" style={{ height: boxHeight }}>
                 {titleTag ? (

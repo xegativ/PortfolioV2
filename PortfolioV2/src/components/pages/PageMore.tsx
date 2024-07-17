@@ -7,12 +7,19 @@ interface IPageMoreProps {
     boxesData: IBox[];
 }
 
+const pageTextWrapper = {
+    paddingTop: "100px",
+    paddingBottom: "100px",
+    marginLeft: "30vw",
+    marginRight: "30vw",
+};
+
 function PageMore(props: IPageMoreProps) {
     const { sectionName, boxesData } = props;
     return (
         <>
             <div className="background"></div>
-            <div className="more-section">
+            <div style={pageTextWrapper}>
                 <Link className="back-button" to="/">
                     Back
                 </Link>
