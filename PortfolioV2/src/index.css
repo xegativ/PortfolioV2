@@ -24,7 +24,8 @@
   --right-area: 35vw;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: var(--color-white);
   background: var(--color-dark-light-grey);
 }
@@ -33,7 +34,6 @@
   color: var(--color-white);
   background: var(--color-dark-light-grey);
 }
-
 
 * {
   margin: 0;
@@ -91,16 +91,14 @@ body {
 }
 
 .pfp-emote {
-
-      background-color: rgb(33, 37, 43);
-      border: 2px solid rgba(255, 255, 255, 0.246);
-      width: 30px;
-      height: 30px;
-      border-radius: 30px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-
+  background-color: rgb(33, 37, 43);
+  border: 2px solid rgba(255, 255, 255, 0.246);
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .background {
@@ -160,8 +158,6 @@ p {
   font-size: var(--font-size-medium);
 
   /* color: var(--color-grey); */
-  
-  
 }
 
 .p-bold {
@@ -219,11 +215,10 @@ p {
     display: none;
   }
 
- 
-.page-text-wrapper {
-  margin-left: 15vw;
-  margin-right: 15vw;
-}
+  .page-text-wrapper {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
 }
 
 /* .left-space {
@@ -476,16 +471,10 @@ div:has(> .box-icon) {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-width: 50px;
-  height: 50px;
+  width: 3em;
+  height: 3em;
 
-  border-radius: 8px;
-  /* 
-    box-shadow: 
-        0px -50px 30px 30px rgba(7, 7, 12, 1),
-        10px -50px 30px 30px rgba(7, 7, 12, 1),
-        -10px -50px 30px 30px rgba(7, 7, 12, 1),
-        0px 0px 8px 8px rgba(255, 255, 255, 0.5); */
+  border-radius: 0.3em;
 }
 
 div > .box-wrapper {
@@ -648,7 +637,6 @@ div:hover > .section-grid > div > .box > * {
   transition: 0.2s;
 }
 
-
 .back-button {
   color: var(--color-grey);
   transition: 0.2s;
@@ -663,7 +651,6 @@ div:hover > .section-grid > div > .box > * {
   color: rgb(255, 255, 255);
 }
 
-
 .fade-line-start {
   margin-top: 10px;
 
@@ -671,11 +658,7 @@ div:hover > .section-grid > div > .box > * {
   height: 1px;
 
   /* background: rgb(255, 255, 255); */
-  background: linear-gradient(
-    to left,
-    var(--color-grey),
-    rgba(255, 0, 0, 0)
-  );
+  background: linear-gradient(to left, var(--color-grey), rgba(255, 0, 0, 0));
 }
 
 .fade-line-end {
@@ -684,11 +667,7 @@ div:hover > .section-grid > div > .box > * {
   width: 100px;
   height: 1px;
 
-  background: linear-gradient(
-    to right,
-    var(--color-grey),
-    rgba(255, 0, 0, 0)
-  );
+  background: linear-gradient(to right, var(--color-grey), rgba(255, 0, 0, 0));
 }
 
 .folio {
@@ -743,7 +722,7 @@ div:hover > .section-grid > div > .box > * {
 }
 
 .bio-text {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .title-tag-wrapper {
