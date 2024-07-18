@@ -56,6 +56,7 @@ const projectData = [
         ],
         showImage: true,
         imageName: "mysips-proj.png",
+  
     },
     {
         title: "Devpost Scraper",
@@ -64,6 +65,7 @@ const projectData = [
         tags: ["Python", "spaCy", "NLP", "Flask"],
         showImage: true,
         imageName: "devpost-proj.png",
+    
     },
     {
         title: "Portfolio V1",
@@ -72,6 +74,16 @@ const projectData = [
         tags: ["JavaScript", "HTML/CSS", "History API", "GSAP"],
         showImage: true,
         imageName: "portfoliov1-proj.png",
+       
+    },
+    {
+        title: "OutfitLB",
+        description:
+            "Desktop app that stores and manages clothing, outfits, and closets.",
+        tags: ["Python", "MongoDB", "PyMongo", "Tkinter", "scikit-learn"],
+        showImage: true,
+        imageName: "outfitlb-proj.png",
+   
     },
     {
         title: "OutfitLB",
@@ -88,14 +100,7 @@ const projectData = [
         tags: ["Python", "MongoDB", "PyMongo", "Tkinter", "scikit-learn"],
         showImage: true,
         imageName: "outfitlb-proj.png",
-    },
-    {
-        title: "OutfitLB",
-        description:
-            "Desktop app that stores and manages clothing, outfits, and closets.",
-        tags: ["Python", "MongoDB", "PyMongo", "Tkinter", "scikit-learn"],
-        showImage: true,
-        imageName: "outfitlb-proj.png",
+        
     },
 ] as IBox[];
 

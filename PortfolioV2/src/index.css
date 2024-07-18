@@ -10,9 +10,9 @@
   --color-white: rgb(239, 247, 254);
 
   /* Font styling */
-  --font-size-small-v2: 0.875rem;
-  --font-size-small: 0.875rem;
-  --font-size-medium: 1rem;
+  --font-size-small-v2: 0.75rem;
+  --font-size-small: 0.75rem;
+  --font-size-medium: 0.875rem;
   --font-size-large: 1.25rem;
   --font-size-xlarge: 1.75rem;
   --font-size-xxlarge: 3.125rem;
@@ -26,6 +26,9 @@
 
   --right-area: 35vw;
 
+  /* Box */
+  --box-border-radius: 0.375rem;
+
   /* Box icon styling */
   --box-icon-side-length: 3.125rem;
   --box-icon-border-radius: 0.3125rem;
@@ -38,16 +41,10 @@
     rgba(255, 255, 255, 0.1) 50%,
     rgba(255, 255, 255, 0.5) 100%
   );
-  --box-wrapper-border-radius: 0.375rem;
+  --box-wrapper-border-radius: 0.4375rem;
 }
 
-/* .orange {
-  background-color: orange;
-}
 
-.default {
-  background-color: white;
-} */
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -59,16 +56,7 @@
   color: var(--color-white);
   background: var(--color-dark-light-grey);
 }
-.default .theme-child {
-  color: rgb(0, 4, 255);
-}
-.orange .theme-child {
-  color: rgb(0, 255, 42);
-}
 
-.theme-parent:has(.orange) {
-  background-color: red;
-}
 
 * {
   margin: 0;
@@ -137,12 +125,13 @@ body {
 }
 
 .background {
-  /* background-image: url(assets/blue-bg.png);
+  background-image: url(../public/backgrounds/macos-ventura.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom center; */
-
-  background-color: var(--color-black);
+    background-position: bottom center;
+/* 
+    background: var(--color-black);
+    background: linear-gradient(129deg, var(--color-black-light) 0%, var(--color-black) 61%); */
 
   width: 100vw;
   height: 100vh;
@@ -151,6 +140,7 @@ body {
 
   z-index: -99;
 }
+
 
 .main {
   padding-left: var(--page-margin-side);
@@ -345,10 +335,12 @@ p {
   margin-right: 5px;
 
   border-radius: 0.3125rem;
+  
 }
 
 .tags > p:not(.important) {
   background-color: var(--color-dark-grey);
+
 }
 
 .tags > p.important {
@@ -401,11 +393,13 @@ p {
 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  justify-content: space-between;
+  width: 100%;
 }
 
-.socials-box > *:not(:first-child) {
+/* .socials-box > *:not(:first-child) {
   margin-left: 15px;
-}
+} */
 
 .socials-box > * {
   opacity: 0.6;
@@ -507,7 +501,7 @@ div > div > .box,
 div > .section-grid > div > .box {
   opacity: 1;
 
-  border-radius: 5px;
+  border-radius: var(--box-border-radius);
 
   border: rgba(255, 255, 255, 0.1) 1px solid;
 
@@ -542,35 +536,6 @@ div > .section-grid > div > .box {
   transition: 0.2s;
 }
 
-.orange .box-wrapper {
-  padding: 0;
-  background-image: none;
-  opacity: 100%;
-  border-radius: var(--box-wrapper-border-radius);
-}
-
-/* default box */
-.orange div > div > .box,
-.orange div > .section-grid > div > .box {
-  opacity: 1;
-
-  border-radius: var(--box-wrapper-border-radius);
-
-  padding: 20px;
-
-  cursor: pointer;
-
-  flex: 1;
-
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.53);
-
-  transition: opacity 0.2s, background-color 0.2s, border 0.2s;
-}
 
 /* hovered box elements */
 .section-wrap > div:hover > div > .box:hover > *,
