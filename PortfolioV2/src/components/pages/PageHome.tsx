@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Bio from "../subcomponents/Section/SectionBio";
 import { experienceData, projectData } from "../data/data";
 import Socials from "../subcomponents/Box/BoxSocials";
 import Section from "../subcomponents/Section/Section";
 import Involvement from "../subcomponents/Section/SectionInvolvement";
 import ThemeComponent from "../subcomponents/Theme/ThemeComponent";
+import { ThemeContext } from "../contexts";
 
 function PageHome() {
   const [projectVisible, setProjectVisible] = useState(false);
@@ -78,11 +79,14 @@ function PageHome() {
     { sectionName: "projects", boxesData: projectData.slice(0, 4) },
   ];
 
+  const { currentTheme } = useContext(ThemeContext);
+
   return (
     <>
       <div className="background"></div>
 
-      <div className="main">
+      <div className={`main ${currentTheme}`}>
+        <ThemeComponent />
         <div className="main-left">
           <Bio
             projectVisible={projectVisible}
