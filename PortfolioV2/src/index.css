@@ -3,11 +3,11 @@
 :root {
   /* Colors */
   --color-black: rgb(7, 7, 12);
-  --color-black-light: rgb(29, 29, 34);
-  --color-grey: rgba(239, 244, 255, 0.8);
-  --color-dark-grey: rgba(223, 242, 255, 0.15);
-  --color-dark-light-grey: rgba(238, 245, 254, 0.4);
-  --color-white: rgb(239, 247, 254);
+  --color-black-light: rgb(29, 29, 36);
+  --color-grey: rgba(236, 237, 250, 0.85);
+  --color-dark-grey: rgba(230, 230, 250, 0.15);
+  --color-dark-light-grey: rgba(236, 240, 255, 0.4);
+  --color-white: #f4f8ff;
 
   /* Font styling */
   --font-size-small-v2: 0.75rem;
@@ -37,9 +37,9 @@
   --box-wrapper-padding: 0.0625rem;
   --box-wrapper-bg-img: linear-gradient(
     -10deg,
-    rgba(255, 255, 255, 0.5) -100%,
-    rgba(255, 255, 255, 0.1) 50%,
-    rgba(255, 255, 255, 0.5) 100%
+    rgba(255, 240, 249, 0.5) -100%,
+    rgba(230, 214, 255, 0.1) 50%,
+    rgba(213, 226, 255, 0.5) 100%
   );
   --box-wrapper-border-radius: 0.4375rem;
 }
@@ -68,7 +68,7 @@
     font-family: "Space Grotesk", sans-serif; */
 
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-white);
 
   scroll-behavior: smooth;
 }
@@ -90,8 +90,8 @@ body {
   border-radius: 130px;
   background-image: linear-gradient(
     -20deg,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.2),
+    rgba(239, 238, 255, 0.6),
+    rgba(239, 237, 255, 0.2),
     rgba(255, 255, 255, 0.9)
   );
 
@@ -114,23 +114,32 @@ body {
 }
 
 .pfp-emote {
-  background-color: rgb(33, 37, 43);
-  border: 2px solid rgba(255, 255, 255, 0.246);
+  background-color: rgb(34, 33, 43);
+  border: 2px solid rgba(246, 246, 255, 0.424);
   width: 30px;
   height: 30px;
   border-radius: 30px;
   position: absolute;
   bottom: 0;
   right: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pfp-emote > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 0.2rem;
 }
 
 .background {
-  background-image: url(../public/backgrounds/macos-ventura.jpg);
+  background-image: url(../public/backgrounds/bg-purple.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-/* 
-    background: var(--color-black);
+
+    /* background: var(--color-black);
     background: linear-gradient(129deg, var(--color-black-light) 0%, var(--color-black) 61%); */
 
   width: 100vw;
@@ -336,11 +345,11 @@ p {
 
   border-radius: 0.3125rem;
   
+  color: var(--color-grey);
 }
 
 .tags > p:not(.important) {
   background-color: var(--color-dark-grey);
-
 }
 
 .tags > p.important {
@@ -675,13 +684,7 @@ div > .section-grid > div > .box {
 }
 
 .gradient-text {
-  background-image: linear-gradient(
-    80deg,
-    #a5b1b9 10%,
-    #ffffff 40%,
-    #abb9bb 80%,
-    #b8c2c7 100%
-  );
+  background-image: linear-gradient(80deg, #c6cfe2 10%, #f1f4fb 40%, #9fa7b9 80%, #c9d2e5 100%);;
 
   background-size: cover;
   background-repeat: no-repeat;
