@@ -44,8 +44,6 @@
   --box-wrapper-border-radius: 0.4375rem;
 }
 
-
-
 ::-moz-selection {
   /* Code for Firefox */
   color: var(--color-white);
@@ -56,7 +54,6 @@
   color: var(--color-white);
   background: var(--color-dark-light-grey);
 }
-
 
 * {
   margin: 0;
@@ -135,11 +132,11 @@ body {
 
 .background {
   background-image: url(../public/backgrounds/bg-purple.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 
-    /* background: var(--color-black);
+  /* background: var(--color-black);
     background: linear-gradient(129deg, var(--color-black-light) 0%, var(--color-black) 61%); */
 
   width: 100vw;
@@ -149,7 +146,6 @@ body {
 
   z-index: -99;
 }
-
 
 .main {
   padding-left: var(--page-margin-side);
@@ -344,7 +340,7 @@ p {
   margin-right: 5px;
 
   border-radius: 0.3125rem;
-  
+
   color: var(--color-grey);
 }
 
@@ -505,6 +501,11 @@ div
   transition: 0.2s;
 }
 
+div > div:hover > .box-wrapper:not(.hide-hover-effects):has(> .box:hover) {
+  background-color: rgba(213, 226, 255, 0.4);
+  transition: 0.2s;
+}
+
 /* default box */
 div > div > .box,
 div > .section-grid > div > .box {
@@ -544,7 +545,6 @@ div > .section-grid > div > .box {
 
   transition: 0.2s;
 }
-
 
 /* hovered box elements */
 .section-wrap > div:hover > div > .box:hover > *,
@@ -684,7 +684,13 @@ div > .section-grid > div > .box {
 }
 
 .gradient-text {
-  background-image: linear-gradient(80deg, #c6cfe2 10%, #f1f4fb 40%, #9fa7b9 80%, #c9d2e5 100%);;
+  background-image: linear-gradient(
+    80deg,
+    #c6cfe2 10%,
+    #f1f4fb 40%,
+    #9fa7b9 80%,
+    #c9d2e5 100%
+  );
 
   background-size: cover;
   background-repeat: no-repeat;
