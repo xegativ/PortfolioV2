@@ -131,7 +131,7 @@ body {
 }
 
 .background {
-  background-image: url(../public/backgrounds/bg-purple.png);
+  background-image: url(/backgrounds/bg-purple.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
