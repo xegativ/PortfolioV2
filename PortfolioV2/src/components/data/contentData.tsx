@@ -121,4 +121,22 @@ const photographyPageContent = {
     ],
 } as PageContent;
 
-export { graphicDesignPageContent, photographyPageContent };
+const clubsPageContent = {
+    tags: ["Updated 2024-07-16", "UBC", "SFU", "Marketing", "Graphic Design"],
+    content: [
+        <ContentText>
+            To me, what's worth more than the experience and prestige you gain
+            from holding executive positions in clubs are the connections you
+            make. Thus, I often partake in positions at clubs unrelated to my
+            area of study, as I value most their varying perspectives.
+        </ContentText>,
+        <ContentText>
+            Here are some work I had completed at such clubs, though I believe
+            my work was often half-assed due to deadlines and concurrent school
+            work.
+        </ContentText>,
+        <ContentImage src="images/clubs/club_vsa.png" />,
+    ],
+};
+
+export { graphicDesignPageContent, photographyPageContent, clubsPageContent };

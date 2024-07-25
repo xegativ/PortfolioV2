@@ -131,7 +131,7 @@ body {
 }
 
 .background {
-  background-image: url(/backgrounds/bg-purple.png);
+  background-image: url(/backgrounds/bg-figma.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -303,6 +303,8 @@ p {
 
   opacity: 1;
   transition: 0.2s;
+
+  border-radius: 4px;
 }
 
 .box-wrapper:hover .img-light-shadow {
