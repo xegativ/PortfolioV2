@@ -136,6 +136,7 @@ const clubsPageContent = {
             work.
         </ContentText>,
         <ContentImage src="images/clubs/club_vsa.png" />,
+        <ContentImage src="images/clubs/club_cmssa.png" />,
     ],
 };
 

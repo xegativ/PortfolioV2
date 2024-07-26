@@ -131,7 +131,7 @@ body {
 }
 
 .background {
-  background-image: url(/backgrounds/bg-figma.png);
+  background-image: url(/backgrounds/bg-mix.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -279,7 +279,7 @@ p {
 
   margin: -20px;
 
-  image-rendering: crisp-edges;
+  /* image-rendering: optimizeQuality; */
 }
 
 .img-shadow {
@@ -504,7 +504,7 @@ div
 }
 
 div > div:hover > .box-wrapper:not(.hide-hover-effects):has(> .box:hover) {
-  background-color: rgba(213, 226, 255, 0.4);
+  background-color: rgba(213, 226, 255, 0.6);
   transition: 0.2s;
 }
 
@@ -625,6 +625,8 @@ div > .section-grid > div > .box {
 
   font-size: var(--font-size-small);
   font-family: "Inter", sans-serif;
+
+  min-width: fit-content;
 }
 
 .view-more:hover {
@@ -761,4 +763,6 @@ div > .section-grid > div > .box {
   font-weight: bold;
 
   line-height: normal;
+
+  overflow-wrap: anywhere;
 }

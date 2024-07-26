@@ -11,7 +11,7 @@ function SectionInvolvement() {
                     <Box
                         to="/graphic-design"
                         hideHoverEffects
-                        titleTag="Graphic Design"
+                        titleTag="2019 — 2022"
                         showImage
                         imageName="involvement-xe.png"
                         imageWidth="-webkit-fill-available"
@@ -23,7 +23,7 @@ function SectionInvolvement() {
                 <div className="section-grid">
                     <Box
                         hideHoverEffects
-                        titleTag="Clubs"
+                        titleTag="2021 — 2023"
                         imageTitleText="Clubs"
                         imageName="involvement-vsa.png"
                         boxHeight="200px"
@@ -35,7 +35,7 @@ function SectionInvolvement() {
                     <Box
                         to="/photography"
                         hideHoverEffects
-                        titleTag="Photography"
+                        titleTag="2022 — Present"
                         imageTitleText="Photography"
                         imageName="involvement-roofing.jpg"
                         boxHeight="200px"
@@ -47,9 +47,9 @@ function SectionInvolvement() {
                 <div className="section-grid">
                     <Box
                         hideHoverEffects
-                        titleTag="UI/UX"
+                        titleTag="2023 — Present"
                         showImage
-                        imageName="involvement-xe.png"
+                        imageName="uiux.png"
                         imageWidth="-webkit-fill-available"
                         hideLeft
                         boxHeight="200px"
