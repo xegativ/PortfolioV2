@@ -3,11 +3,11 @@
 :root {
   /* Colors */
   --color-black: rgb(7, 7, 12);
-  --color-black-light: rgb(29, 29, 34);
-  --color-grey: rgba(239, 244, 255, 0.8);
-  --color-dark-grey: rgba(223, 242, 255, 0.15);
-  --color-dark-light-grey: rgba(238, 245, 254, 0.4);
-  --color-white: rgb(239, 247, 254);
+  --color-black-light: rgb(29, 29, 36);
+  --color-grey: rgba(236, 237, 250, 0.85);
+  --color-dark-grey: rgba(230, 230, 250, 0.15);
+  --color-dark-light-grey: rgba(236, 240, 255, 0.4);
+  --color-white: #f4f8ff;
 
   /* Font styling */
   --font-size-small-v2: 0.75rem;
@@ -37,14 +37,12 @@
   --box-wrapper-padding: 0.0625rem;
   --box-wrapper-bg-img: linear-gradient(
     -10deg,
-    rgba(255, 255, 255, 0.5) -100%,
-    rgba(255, 255, 255, 0.1) 50%,
-    rgba(255, 255, 255, 0.5) 100%
+    rgba(255, 240, 249, 0.5) -100%,
+    rgba(230, 214, 255, 0.1) 50%,
+    rgba(213, 226, 255, 0.5) 100%
   );
   --box-wrapper-border-radius: 0.4375rem;
 }
-
-
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -57,7 +55,6 @@
   background: var(--color-dark-light-grey);
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +65,7 @@
     font-family: "Space Grotesk", sans-serif; */
 
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-white);
 
   scroll-behavior: smooth;
 }
@@ -90,8 +87,8 @@ body {
   border-radius: 130px;
   background-image: linear-gradient(
     -20deg,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.2),
+    rgba(239, 238, 255, 0.6),
+    rgba(239, 237, 255, 0.2),
     rgba(255, 255, 255, 0.9)
   );
 
@@ -114,23 +111,32 @@ body {
 }
 
 .pfp-emote {
-  background-color: rgb(33, 37, 43);
-  border: 2px solid rgba(255, 255, 255, 0.246);
+  background-color: rgb(34, 33, 43);
+  border: 2px solid rgba(246, 246, 255, 0.424);
   width: 30px;
   height: 30px;
   border-radius: 30px;
   position: absolute;
   bottom: 0;
   right: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pfp-emote > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 0.2rem;
 }
 
 .background {
-  background-image: url(../public/backgrounds/macos-ventura.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-/* 
-    background: var(--color-black);
+  background-image: url(/backgrounds/bg-mix.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  /* background: var(--color-black);
     background: linear-gradient(129deg, var(--color-black-light) 0%, var(--color-black) 61%); */
 
   width: 100vw;
@@ -140,7 +146,6 @@ body {
 
   z-index: -99;
 }
-
 
 .main {
   padding-left: var(--page-margin-side);
@@ -226,7 +231,47 @@ p {
   margin-right: 30vw;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) 
+{
+  :root {
+    --page-margin-side: 5vw;
+    --left-area: 40vw;
+    --right-area: 45vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-left {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+  }
+  .main-right {
+    width: 100%;
+  }
+  .tob-wrap {
+    display: none;
+  }
+
+  .page-text-wrapper {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  :root {
+    --page-margin-side: 15vw;
+  }
+
+}
+@media screen and (max-height: 800px) {
+  .tob-wrap {
+    display: none;
+  }
+
+}
+
+@media screen and (max-height: 700px) {
   .main-left {
     position: relative;
     width: 100%;
@@ -245,6 +290,7 @@ p {
     margin-right: 15vw;
   }
 }
+
 
 /* .left-space {
     width: var(--left-right-space);
@@ -274,7 +320,7 @@ p {
 
   margin: -20px;
 
-  image-rendering: crisp-edges;
+  /* image-rendering: optimizeQuality; */
 }
 
 .img-shadow {
@@ -298,6 +344,8 @@ p {
 
   opacity: 1;
   transition: 0.2s;
+
+  border-radius: 4px;
 }
 
 .box-wrapper:hover .img-light-shadow {
@@ -335,12 +383,12 @@ p {
   margin-right: 5px;
 
   border-radius: 0.3125rem;
-  
+
+  color: var(--color-grey);
 }
 
 .tags > p:not(.important) {
   background-color: var(--color-dark-grey);
-
 }
 
 .tags > p.important {
@@ -496,6 +544,11 @@ div
   transition: 0.2s;
 }
 
+div > div:hover > .box-wrapper:not(.hide-hover-effects):has(> .box:hover) {
+  background-color: rgba(213, 226, 255, 0.4);
+  transition: 0.2s;
+}
+
 /* default box */
 div > div > .box,
 div > .section-grid > div > .box {
@@ -535,7 +588,6 @@ div > .section-grid > div > .box {
 
   transition: 0.2s;
 }
-
 
 /* hovered box elements */
 .section-wrap > div:hover > div > .box:hover > *,
@@ -614,6 +666,8 @@ div > .section-grid > div > .box {
 
   font-size: var(--font-size-small);
   font-family: "Inter", sans-serif;
+
+  min-width: fit-content;
 }
 
 .view-more:hover {
@@ -677,10 +731,10 @@ div > .section-grid > div > .box {
 .gradient-text {
   background-image: linear-gradient(
     80deg,
-    #a5b1b9 10%,
-    #ffffff 40%,
-    #abb9bb 80%,
-    #b8c2c7 100%
+    #c6cfe2 10%,
+    #f1f4fb 40%,
+    #9fa7b9 80%,
+    #c9d2e5 100%
   );
 
   background-size: cover;
@@ -750,4 +804,6 @@ div > .section-grid > div > .box {
   font-weight: bold;
 
   line-height: normal;
+
+  overflow-wrap: anywhere;
 }

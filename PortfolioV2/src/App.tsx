@@ -4,8 +4,10 @@ import PageMore from "./components/pages/PageMore";
 import { experienceData, projectData } from "./components/data/data";
 import PageText from "./components/pages/PageText";
 import {
+    clubsPageContent,
     graphicDesignPageContent,
     photographyPageContent,
+    uiuxPageContent,
 } from "./components/data/contentData";
 
 function App() {
@@ -45,6 +47,24 @@ function App() {
                     <PageText
                         sectionName="Photography"
                         pageContent={photographyPageContent}
+                    ></PageText>
+                }
+            />
+            <Route
+                path="/clubs"
+                element={
+                    <PageText
+                        sectionName="Clubs"
+                        pageContent={clubsPageContent}
+                    ></PageText>
+                }
+            />
+            <Route
+                path="/uiux"
+                element={
+                    <PageText
+                        sectionName="UI/UX"
+                        pageContent={uiuxPageContent}
                     ></PageText>
                 }
             />

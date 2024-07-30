@@ -4,11 +4,11 @@ import { IBox } from "../subcomponents/Box/Box";
     {
         title: "Software Developer Co-op",
         titleAddition: "ConeTec",
-        subTitle: "Jan 2024 - Present",
-        // bulletPoints: [
-        //     "Working on developing Pacific Conference on Artificial Intelligence 2024 web page and redesigning UBC Data Science Club main web page.",
-        //     "Utilized Agile and Scrum methodology to enhance development efficiency.",
-        // ],
+        subTitle: "Jan 2024 - Aug 2024",
+        bulletPoints: [
+            "Utilized X and Y.",
+            "Increased X load times by Y% by Z.",
+        ],
         tags: ["React", "TypeScript", "Electron.js", "Redux"],
         showIcon: true,
         iconName: "conetec-icon.jpg",
@@ -16,12 +16,12 @@ import { IBox } from "../subcomponents/Box/Box";
     {
         title: "Research Software Engineer Intern",
         titleAddition: "UCW Labs, Farmer's Hive",
-        subTitle: "Sep 2023 - Present",
+        subTitle: "Jan 2023 - May 2023",
         tags: ["Python", "Pandas", "REST API"],
         showIcon: true,
         iconName: "fh-icon.png",
         bulletPoints: [
-            "Predicted irrigation requirements based off of historical sensor data provided by company and weather API.",
+            "Conducted research and predicted irrigation requirements based off of historical sensor data provided by company and weather API.",
             "Designed and rigorously tested script with the objective of delivering the service to clients using company’s smart sensors, utilizing GitLab for version control.",
         ],
     },
@@ -41,6 +41,22 @@ import { IBox } from "../subcomponents/Box/Box";
 ] as IBox[];
 
 const projectData = [
+    {
+        title: "mySips v2",
+        description:
+            "Website application that records and stores drinks from your favourite beverage locations.",
+        tags: [
+            "React",
+            "TypeScript",
+            "HTML/CSS",
+            "Firebase",
+            "Redux",
+            "Tailwind"
+        ],
+        showImage: true,
+        imageName: "temp/temp.png",
+  
+    },
     {
         title: "mySips",
         description:
@@ -68,7 +84,7 @@ const projectData = [
     
     },
     {
-        title: "Portfolio V1",
+        title: "Portfolio v1",
         description:
             "A poorly coded single-paged application to host all my projects and designs in one place. ",
         tags: ["JavaScript", "HTML/CSS", "History API", "GSAP"],
@@ -77,31 +93,41 @@ const projectData = [
        
     },
     {
-        title: "OutfitLB",
+        title: "Pola Party",
         description:
-            "Desktop app that stores and manages clothing, outfits, and closets.",
-        tags: ["Python", "MongoDB", "PyMongo", "Tkinter", "scikit-learn"],
+            "A web application that catalogues polaroid pictures. Created for personal use with the hopes of maximising user experience. Just a fun project that we hope helps us with learning Docker and virtual environments.",
+        tags: ["Python", "Flask", "PostgreSQL", "Docker", "Azure"],
         showImage: true,
-        imageName: "outfitlb-proj.png",
+        imageName: "temp/temp.png",
+       
+    },
+    {
+        title: "PCA 2024",
+        description:
+            "Lead UI/UX designer for PCA 2024, a conference held by UBC DSCI Club.",
+        tags: ["Typescript", "React", "Express", "Tailwind", "MUI"],
+        showImage: true,
+        imageName: "temp/temp.png",
    
     },
     {
-        title: "OutfitLB",
+        title: "Irrigation Estimator",
         description:
-            "Desktop app that stores and manages clothing, outfits, and closets.",
-        tags: ["Python", "MongoDB", "PyMongo", "Tkinter", "scikit-learn"],
+            "Utilized information provided by Crop Evapotranspiration: Guidelines for Computing Crop Water Requirements (1998) by Rick G. Allen and Food and Agriculture Organization of the United Nations. Implemented Penman-Montieth equation to approximate net evapotranspiration from meteorological data.",
+        tags: ["Python", "Matplotlib", "Requests", "REST API"],
         showImage: true,
-        imageName: "outfitlb-proj.png",
-    },
-    {
-        title: "OutfitLB",
-        description:
-            "Desktop app that stores and manages clothing, outfits, and closets.",
-        tags: ["Python", "MongoDB", "PyMongo", "Tkinter", "scikit-learn"],
-        showImage: true,
-        imageName: "outfitlb-proj.png",
+        imageName: "temp/temp.png",
         
     },
+    {
+        title: "Crossy Road Matplotlib",
+        description:
+            "Desktop app that stores and manages clothing, outfits, and closets.",
+        tags: ["Python", "MongoDB", "PyMongo", "Tkinter", "scikit-learn"],
+        showImage: true,
+        imageName: "temp/temp.png",
+    },
+    
 ] as IBox[];
 
 export {projectData, experienceData};
