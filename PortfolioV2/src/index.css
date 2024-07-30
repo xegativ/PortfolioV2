@@ -231,7 +231,47 @@ p {
   margin-right: 30vw;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) 
+{
+  :root {
+    --page-margin-side: 5vw;
+    --left-area: 40vw;
+    --right-area: 45vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-left {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+  }
+  .main-right {
+    width: 100%;
+  }
+  .tob-wrap {
+    display: none;
+  }
+
+  .page-text-wrapper {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  :root {
+    --page-margin-side: 15vw;
+  }
+
+}
+@media screen and (max-height: 800px) {
+  .tob-wrap {
+    display: none;
+  }
+
+}
+
+@media screen and (max-height: 700px) {
   .main-left {
     position: relative;
     width: 100%;
@@ -250,6 +290,7 @@ p {
     margin-right: 15vw;
   }
 }
+
 
 /* .left-space {
     width: var(--left-right-space);
@@ -504,7 +545,7 @@ div
 }
 
 div > div:hover > .box-wrapper:not(.hide-hover-effects):has(> .box:hover) {
-  background-color: rgba(213, 226, 255, 0.6);
+  background-color: rgba(213, 226, 255, 0.4);
   transition: 0.2s;
 }
 

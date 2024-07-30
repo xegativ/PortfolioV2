@@ -37,7 +37,7 @@ function SectionInvolvement() {
                         hideHoverEffects
                         titleTag="2022 — Present"
                         imageTitleText="Photography"
-                        imageName="involvement-roofing.jpg"
+                        imageName="involvement-roofing2.jpg"
                         boxHeight="200px"
                         hideLeft
                         showImage
@@ -54,6 +54,7 @@ function SectionInvolvement() {
                         hideLeft
                         boxHeight="200px"
                         imageTitleText="UI/UX"
+                        to="/uiux"
                     />
                 </div>
             </div>
