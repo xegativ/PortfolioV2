@@ -131,7 +131,7 @@ body {
 }
 
 .background {
-  background-image: url(/backgrounds/bg-mix.png);
+  background-image: url(/backgrounds/bg-mix-uncompressed.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -708,7 +708,7 @@ div > .section-grid > div > .box {
   background: linear-gradient(to right, var(--color-grey), rgba(255, 0, 0, 0));
 }
 
-.folio {
+/* .folio {
   background-image: url("./assets/portofoliov1.png");
 }
 
@@ -726,7 +726,7 @@ div > .section-grid > div > .box {
 
 .devpost {
   background-image: url("./assets/devposttitle.png");
-}
+} */
 
 .gradient-text {
   background-image: linear-gradient(

@@ -13,7 +13,7 @@ function SectionInvolvement() {
                         hideHoverEffects
                         titleTag="2019 — 2022"
                         showImage
-                        imageName="involvement-xe.png"
+                        imageName="involvement-xe-min.png"
                         imageWidth="-webkit-fill-available"
                         hideLeft
                         boxHeight="400px"
@@ -25,7 +25,7 @@ function SectionInvolvement() {
                         hideHoverEffects
                         titleTag="2021 — 2023"
                         imageTitleText="Clubs"
-                        imageName="involvement-vsa.png"
+                        imageName="involvement-vsa-min.png"
                         boxHeight="200px"
                         hideLeft
                         showImage
@@ -37,7 +37,7 @@ function SectionInvolvement() {
                         hideHoverEffects
                         titleTag="2022 — Present"
                         imageTitleText="Photography"
-                        imageName="involvement-roofing2.jpg"
+                        imageName="involvement-roofing2-min.jpg"
                         boxHeight="200px"
                         hideLeft
                         showImage

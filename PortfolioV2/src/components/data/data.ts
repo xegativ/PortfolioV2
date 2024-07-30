@@ -6,8 +6,7 @@ import { IBox } from "../subcomponents/Box/Box";
         titleAddition: "ConeTec",
         subTitle: "Jan 2024 - Aug 2024",
         bulletPoints: [
-            "Utilized X and Y.",
-            "Increased X load times by Y% by Z.",
+            "Architectured and further developed internal data processing software for Cone Pentration Testing using React, Redux, Typescript and Electron",
         ],
         tags: ["React", "TypeScript", "Electron.js", "Redux"],
         showIcon: true,
@@ -33,7 +32,7 @@ import { IBox } from "../subcomponents/Box/Box";
         showIcon: true,
         iconName: "p6-logo-2.png",
         bulletPoints: [
-            "Managed and co-led a collective of designers in creating artwork for clients, resulting in sales totaling $20,000.",
+            "Managed and co-led a collective of designers in creating artwork for 30+ clients, resulting in sales totaling $20,000.",
             "Designed, documented, and engineered usable, web-related software for clients.",
             "Developed clear and concise communication skills through direct client interactions.",
         ],
@@ -71,7 +70,7 @@ const projectData = [
             "Passport.JS",
         ],
         showImage: true,
-        imageName: "mysips-proj.png",
+        imageName: "projects/mysips-proj-min.png",
   
     },
     {
@@ -80,7 +79,7 @@ const projectData = [
             "Web scraper that collects submission data from any given number of Devpost hackathon pages and returns project data.",
         tags: ["Python", "spaCy", "NLP", "Flask"],
         showImage: true,
-        imageName: "devpost-proj.png",
+        imageName: "projects/devpost-proj-min.png",
     
     },
     {
@@ -89,7 +88,7 @@ const projectData = [
             "A poorly coded single-paged application to host all my projects and designs in one place. ",
         tags: ["JavaScript", "HTML/CSS", "History API", "GSAP"],
         showImage: true,
-        imageName: "portfoliov1-proj.png",
+        imageName: "projects/portfoliov1-proj-min.png",
        
     },
     {
@@ -98,22 +97,22 @@ const projectData = [
             "A web application that catalogues polaroid pictures. Created for personal use with the hopes of maximising user experience. Just a fun project that we hope helps us with learning Docker and virtual environments.",
         tags: ["Python", "Flask", "PostgreSQL", "Docker", "Azure"],
         showImage: true,
-        imageName: "temp/temp.png",
+        imageName: "projects/polaparty-proj-min.png",
        
     },
     {
-        title: "PCA 2024",
+        title: "PCA 2024 & UBC DSCI Club",
         description:
-            "Lead UI/UX designer for PCA 2024, a conference held by UBC DSCI Club.",
+            "Lead UI/UX designer for PCA 2024 and unreleased, new UBC Data Science club site.",
         tags: ["Typescript", "React", "Express", "Tailwind", "MUI"],
         showImage: true,
-        imageName: "temp/temp.png",
+        imageName: "projects/ubcdsci-proj-min.png",
    
     },
     {
         title: "Irrigation Estimator",
         description:
-            "Utilized information provided by Crop Evapotranspiration: Guidelines for Computing Crop Water Requirements (1998) by Rick G. Allen and Food and Agriculture Organization of the United Nations. Implemented Penman-Montieth equation to approximate net evapotranspiration from meteorological data.",
+            "Implemented Penman-Montieth equation to approximate net evapotranspiration from meteorological data.",
         tags: ["Python", "Matplotlib", "Requests", "REST API"],
         showImage: true,
         imageName: "temp/temp.png",

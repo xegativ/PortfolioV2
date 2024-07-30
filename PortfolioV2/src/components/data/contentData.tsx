@@ -29,7 +29,7 @@ const graphicDesignPageContent = {
         </ContentText>,
 
         <ContentImage
-            src="images/graphicdesign/xe-slant.png"
+            src="images/graphicdesign/xe-slant-min.png"
             caption="Graphics were created in the time frame of 2018-2020, ranging from $30 to $100+."
         />,
 
@@ -54,7 +54,7 @@ const graphicDesignPageContent = {
         </ContentText>,
 
         <ContentImage
-            src="images/graphicdesign/xe-clothing.png"
+            src="images/graphicdesign/xe-clothing-min.png"
             caption="Various unused mockup designs, incorporating a grunge
                     aesthetic."
         />,
