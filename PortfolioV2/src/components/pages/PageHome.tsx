@@ -30,21 +30,6 @@ function PageHome() {
             const experiencesTop = 0;
             const involveTop = 2;
             if (experiencesEl && projectsEl && involveEl) {
-                console.log(
-                    "Projects: ",
-                    projectsEl.getBoundingClientRect().top
-                );
-
-                console.log(
-                    "Experience: ",
-                    experiencesEl.getBoundingClientRect().top
-                );
-
-                console.log(
-                    "Involvement: ",
-                    involveEl.getBoundingClientRect().top
-                );
-
                 if (
                     experiencesEl.getBoundingClientRect().top <=
                         experiencesTop &&
@@ -90,7 +75,6 @@ function PageHome() {
 
     const { currentTheme } = useContext(ThemeContext);
 
-    console.log({ currentTheme });
     return (
         <>
             <div className={`background ${currentTheme}`}></div>
