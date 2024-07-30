@@ -12,7 +12,8 @@ function SectionBio({
     return (
         <div className="bio-wrap">
             <div className="bio-pfp-wrapper">
-                <div className="bio-pfp"></div>
+                {/* <div className="bio-pfp"></div> */}
+                <img className="bio-pfp" src={`icons/pfp.jpg`}></img>
                 <div className="pfp-emote">
                     <div>🚀</div>
                 </div>
@@ -24,7 +25,7 @@ function SectionBio({
 
             <div className="bio-text">
                 <h3>
-                    An engineer and designer constantly looking for
+                    I am an engineer and designer constantly looking for
                     opportunities to grow my technological skills and expertise.
                     <br></br>
                     <br></br>

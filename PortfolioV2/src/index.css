@@ -104,10 +104,10 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 129px;
-  background-image: url("/PortfolioV2/public/icons/pfp.jpg");
-  background-size: cover;
+  
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center; */
 }
 
 .pfp-emote {
