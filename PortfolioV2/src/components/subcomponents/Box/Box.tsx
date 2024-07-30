@@ -195,7 +195,14 @@ function Box({
                                 </svg>
                             </a>
                         </p>
-                        <p id="resume-button">RESUME</p>
+                        <p id="resume-button">
+                            <a
+                                href="/resume/Andrew_Resume_TEMP.pdf"
+                                target="_blank"
+                            >
+                                RESUME
+                            </a>
+                        </p>
                     </div>
                 )}
             </div>

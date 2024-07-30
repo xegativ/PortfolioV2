@@ -44,7 +44,7 @@ const projectData = [
     {
         title: "mySips v2",
         description:
-            "Website application that records and stores drinks from your favourite beverage locations.",
+            "Revamped site focused on user accessibility; in progress.",
         tags: [
             "React",
             "TypeScript",
