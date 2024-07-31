@@ -160,7 +160,14 @@ svg {
 .svg-urlLink {
   width: 15px;
   height: 15px;
-  margin-left: 8px
+  margin-left: 8px;
+  fill: var(--color-dark-light-grey);
+  transition: 0.2s;
+}
+
+.svg-urlLink:hover {
+  fill: white;
+  transition: 0.2s;
 }
 
 h1 {

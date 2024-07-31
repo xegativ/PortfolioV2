@@ -101,7 +101,6 @@ function Box({
                                 <a href={urlLink} target="_blank">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        fill="white"
                                         viewBox="0 0 20 21"
                                         className="svg-urlLink"
                                     >
