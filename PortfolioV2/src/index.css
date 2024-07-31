@@ -157,6 +157,12 @@ svg {
   height: 25px;
 }
 
+.svg-urlLink {
+  width: 15px;
+  height: 15px;
+  margin-left: 8px
+}
+
 h1 {
   /* font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
         Helvetica Neue, Arial, sans-serif; */

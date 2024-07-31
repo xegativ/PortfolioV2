@@ -32,6 +32,8 @@ export interface IBox {
     hideHoverEffects?: boolean;
     to?: string;
     styles?: React.CSSProperties;
+
+    urlLink?: string;
 }
 
 function Box({
@@ -55,6 +57,7 @@ function Box({
     hideLeft = false,
     hideHoverEffects = false,
     to,
+    urlLink,
 }: IBox) {
     const navigate = useNavigate();
 
@@ -92,6 +95,21 @@ function Box({
                                         {titleAddition}
                                     </p>
                                 </>
+                            )}
+
+                            {urlLink ? (
+                                <a href={urlLink} target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="white"
+                                        viewBox="0 0 20 21"
+                                        className="svg-urlLink"
+                                    >
+                                        <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                                    </svg>
+                                </a>
+                            ) : (
+                                <></>
                             )}
                         </div>
                         {description && (

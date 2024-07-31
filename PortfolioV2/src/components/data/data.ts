@@ -54,7 +54,7 @@ const projectData = [
         ],
         showImage: true,
         imageName: "temp/temp.png",
-  
+      
     },
     {
         title: "mySips",
@@ -85,11 +85,11 @@ const projectData = [
     {
         title: "Portfolio v1",
         description:
-            "A poorly coded single-paged application to host all my projects and designs in one place. ",
+            "A single-paged application to host all my projects and designs in one place.",
         tags: ["JavaScript", "HTML/CSS", "History API", "GSAP"],
         showImage: true,
         imageName: "projects/portfoliov1-proj-min.png",
-       
+        urlLink: "https://andrewlai-v1.netlify.app/"       
     },
     {
         title: "Pola Party",
