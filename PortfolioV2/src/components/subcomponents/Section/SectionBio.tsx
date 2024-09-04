@@ -24,7 +24,7 @@ function SectionBio({
             <h2>Computer Engineering @ SFU</h2>
 
             <div className="bio-text">
-                <h3>
+                <p className="bio-text-p" alt="">
                     I am an engineer and designer constantly looking for
                     opportunities to grow my technological skills and expertise.
                     <br></br>
@@ -43,7 +43,7 @@ function SectionBio({
                     <span className="p-bold">
                         &nbsp;the.andrew.lai@gmail.com.
                     </span>
-                </h3>
+                </p>
             </div>
 
             <div className="tob-wrap">

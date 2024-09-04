@@ -185,14 +185,6 @@ h2 {
   margin-top: 10px;
 }
 
-h3 {
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  font-size: var(--font-size-medium);
-  line-height: 25px;
-
-  color: var(--color-grey);
-}
 
 p {
   font-family: "Inter", sans-serif;
@@ -774,6 +766,17 @@ div > .section-grid > div > .box {
 
 .bio-text {
   margin-top: 30px;
+}
+
+.bio-text-p {
+  
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: var(--font-size-medium);
+  line-height: 25px;
+
+  color: var(--color-grey);
+
 }
 
 .title-tag-wrapper {
