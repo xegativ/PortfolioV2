@@ -6,7 +6,9 @@ import { IBox } from "../subcomponents/Box/Box";
         titleAddition: "ConeTec",
         subTitle: "Jan 2024 - Aug 2024",
         bulletPoints: [
-            "Architectured and further developed internal data processing software for Cone Pentration Testing using React, Redux, Typescript and Electron",
+            "Decreased loading times by 80% on the sounding overview and commit display pages through strategic migration to and caching of calculations on the main process.",
+            "Implemented new features for data analysis and improved graph interactions, including point labeling and a more intuitive commit display on custom graph API.",
+            "Worked on implementation of internal data processing software using a robust TypeScript-based architecture, leveraging React for the UI and Redux for state management."
         ],
         tags: ["React", "TypeScript", "Electron.js", "Redux"],
         showIcon: true,
@@ -16,7 +18,7 @@ import { IBox } from "../subcomponents/Box/Box";
         title: "Research Software Engineer Intern",
         titleAddition: "UCW Labs, Farmer's Hive",
         subTitle: "Jan 2023 - May 2023",
-        tags: ["Python", "Pandas", "REST API"],
+        tags: ["Python", "Pandas", "NumPy"],
         showIcon: true,
         iconName: "fh-icon.png",
         bulletPoints: [

@@ -32,7 +32,7 @@ function SectionBio({
                     With a wide array of interests in topics such as&nbsp;
                     <span className="p-bold">
                         startups, oceanography and geotechnical engineering,
-                        embedded systems, and quantum computing,
+                        embedded systems, and computer architecture,
                     </span>{" "}
                     I am always putting work into learning about this
                     ever-changing world.
