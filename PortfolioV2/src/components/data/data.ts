@@ -6,9 +6,10 @@ import { IBox } from "../subcomponents/Box/Box";
         titleAddition: "ConeTec",
         subTitle: "Jan 2024 - Aug 2024",
         bulletPoints: [
+            "Worked on internal data-processing Electron.js-based software, utilizing TypeScript architecture, leveraging React for the UI and Redux for state management.",
             "Decreased loading times by 80% on the sounding overview and commit display pages through strategic migration to and caching of calculations on the main process.",
-            "Implemented new features for cone-penetration analysis and improved graph interactions, including custom point labeling and improved graph scaling logic.",
-            "Worked on internal data-processing software, utilizing TypeScript-based architecture, leveraging React for the UI and Redux for state management."
+            "Implemented new features for cone-penetration analysis and improved graph interactions, including dynaamic point labeling and improved graph scaling logic.",
+            
         ],
         tags: ["React", "TypeScript", "Electron.js", "Redux", "Node.js"],
         showIcon: true,
