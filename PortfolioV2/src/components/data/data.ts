@@ -7,10 +7,10 @@ import { IBox } from "../subcomponents/Box/Box";
         subTitle: "Jan 2024 - Aug 2024",
         bulletPoints: [
             "Decreased loading times by 80% on the sounding overview and commit display pages through strategic migration to and caching of calculations on the main process.",
-            "Implemented new features for data analysis and improved graph interactions, including point labeling and a more intuitive commit display on custom graph API.",
-            "Worked on implementation of internal data processing software using a robust TypeScript-based architecture, leveraging React for the UI and Redux for state management."
+            "Implemented new features for cone-penetration analysis and improved graph interactions, including custom point labeling and improved graph scaling logic.",
+            "Worked on internal data-processing software, utilizing TypeScript-based architecture, leveraging React for the UI and Redux for state management."
         ],
-        tags: ["React", "TypeScript", "Electron.js", "Redux"],
+        tags: ["React", "TypeScript", "Electron.js", "Redux", "Node.js"],
         showIcon: true,
         iconName: "conetec-icon.jpg",
     },
