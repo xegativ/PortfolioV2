@@ -42,15 +42,11 @@ const graphicDesignPageContent = {
         </ContentText>,
 
         <ContentText>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Since then, I have slowed down my progress with graphic design.
+            While my social media feeds are often filled with such content, my
+            career has led me down a different path towards software and
+            hardware development, leaving me with only a minimal amount of time
+            to spare on other subjects.
         </ContentText>,
 
         <ContentImage
@@ -58,18 +54,6 @@ const graphicDesignPageContent = {
             caption="Various unused mockup designs, incorporating a grunge
                     aesthetic."
         />,
-
-        <ContentText>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-        </ContentText>,
     ],
 } as PageContent;
 
@@ -160,18 +144,25 @@ const clubsPageContent = {
             To me, what's worth more than the experience and prestige you gain
             from holding executive positions in clubs are the connections you
             make. Thus, I often partake in positions at clubs unrelated to my
-            area of study, as I value most their varying perspectives.
+            area of study, as what I value most are their varying perspectives.
         </ContentText>,
         <ContentText>
-            Here are some work I had completed at such clubs, though I believe
-            my work was often half-assed due to deadlines and concurrent school
-            work.
+            This section includes some work I had completed at such clubs.
         </ContentText>,
         <ContentTitle>UBC VSA</ContentTitle>,
-        <ContentImage src="images/clubs/club_vsa.png" />,
+        <ContentImage
+            src="images/clubs/club_vsa.png"
+            caption="Merchandise advertisement designed for UBC's Vietnamese Student Association in the 2022-2023 school year."
+        />,
         <ContentTitle>UBC CMSSA</ContentTitle>,
-        <ContentImage src="images/clubs/cmssa_merch.png" />,
-        <ContentImage src="images/clubs/cmssa_merch2.png" />,
+        <ContentImage
+            src="images/clubs/cmssa_merch.png"
+            caption="Merchandise advertisement designed for UBC's CMS Student Association in the 2022-2023 school year."
+        />,
+        <ContentImage
+            src="images/clubs/cmssa_merch2.png"
+            caption="Example posts made for club social media account."
+        />,
         <ContentTitle>SFU SUBVISION</ContentTitle>,
         <ContentImage src="images/temp/temp_s.png" />,
         <ContentTitle>SFU FINSA</ContentTitle>,
@@ -183,7 +174,7 @@ const clubsPageContent = {
 
 const uiuxPageContent = {
     tags: [],
-    content: [<ContentImage src="images/temp/temp_s.png" />],
+    content: [<ContentText>Under construction.</ContentText>],
 };
 
 export {
