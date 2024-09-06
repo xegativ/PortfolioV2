@@ -55,7 +55,7 @@ import { IBox } from "../subcomponents/Box/Box";
         subTitle: "Sep 2023 - Apr 2024",
         tags: ["React", "Tailwind", "Trello","Adobe CC", "Figma"],
         showIcon: true,
-        iconName: "p6-logo-2.png",
+        iconName: "dsci_logo.png",
         
     },
     {
