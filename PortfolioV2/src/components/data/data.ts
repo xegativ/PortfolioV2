@@ -2,21 +2,30 @@ import { IBox } from "../subcomponents/Box/Box";
 
  const experienceData = [
     {
-        title: "Software Developer Co-op",
+        title: "Software Developer Intern",
+        titleAddition: "Verzena",
+        subTitle: "Aug 2024 - Present",
+     
+        tags: ["React", "Tailwind", "Adobe CC", "Figma"],
+        showIcon: true,
+        iconName: "verzena.png",
+    },
+    {
+        title: "Software Engineer Co-op",
         titleAddition: "ConeTec",
         subTitle: "Jan 2024 - Aug 2024",
         bulletPoints: [
-            "Worked on internal data-processing Electron.js-based software, utilizing TypeScript architecture, leveraging React for the UI and Redux for state management.",
-            "Decreased loading times by 80% on the sounding overview and commit display pages through strategic migration to and caching of calculations on the main process.",
-            "Implemented new features for cone-penetration analysis and improved graph interactions, including dynaamic point labeling and improved graph scaling logic.",
+            "Utilized a robust technology stack including the application of advanced React and TypeScript techniques, Electron.js, Node.js for server-side logic, and Redux for state management.",
+            "Decreased loading times by up to 80% on data-intensive pages through strategic migration and caching of calculations on the main process.",
+            "Implemented new features for cone-penetration analysis and improved graph interactions, including custom point labeling and improved graph scaling logic.",
             
         ],
-        tags: ["React", "TypeScript", "Electron.js", "Redux", "Node.js"],
+        tags: ["React", "TypeScript", "Electron.js", "Redux", "Node.js", "Fluent UI"],
         showIcon: true,
         iconName: "conetec-icon.jpg",
     },
     {
-        title: "Research Software Engineer Intern",
+        title: "Software Engineer Intern",
         titleAddition: "UCW Labs, Farmer's Hive",
         subTitle: "Jan 2023 - May 2023",
         tags: ["Python", "Pandas", "NumPy"],
@@ -28,7 +37,7 @@ import { IBox } from "../subcomponents/Box/Box";
         ],
     },
     {
-        title: "Graphic Designer and Creative Director",
+        title: "Graphic Designer, Creative Director",
         titleAddition: "P6",
         subTitle: "Sep 2019 - Aug 2022",
         tags: ["Adobe CC", "Blender"],
@@ -40,6 +49,40 @@ import { IBox } from "../subcomponents/Box/Box";
             "Developed clear and concise communication skills through direct client interactions.",
         ],
     },
+    {
+        title: "Junior Developer, Lead UI/UX",
+        titleAddition: "UBC Data Science Club",
+        subTitle: "Sep 2023 - Apr 2024",
+        tags: ["React", "Tailwind", "Trello","Adobe CC", "Figma"],
+        showIcon: true,
+        iconName: "p6-logo-2.png",
+        
+    },
+    {
+        title: "VP Technology, Design Coordinator",
+        titleAddition: "SFU Finance Student Association",
+        subTitle: "Sep 2023 - Apr 2024",
+        tags: ["WordPress", "CRM", "Adobe CC" ,"Figma"],
+        showIcon: true,
+        iconName: "finsa_logo.png",
+        
+    },
+    {
+        title: "Software Engineer, VP Design",
+        titleAddition: "SFU Subvision Engineering",
+        subTitle: "Sep 2023 - Jan 2024",
+        tags: ["ROS", "Python", "Adobe CC", "Figma"],
+        showIcon: true,
+        iconName: "p6-logo-2.png",
+    },
+    {
+        title: "Graphic Designer",
+        titleAddition: "UBC Vietnamese Student Association",
+        subTitle: "Sep 2021 - Jun 2022",
+        tags: ["Adobe CC"],
+        showIcon: true,
+        iconName: "p6-logo-2.png",
+    }
 ] as IBox[];
 
 const projectData = [

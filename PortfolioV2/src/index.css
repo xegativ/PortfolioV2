@@ -244,6 +244,13 @@ p {
   margin-right: 30vw;
 }
 
+.page-more-wrapper {
+  margin-left: 30vw;
+  margin-right: 30vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 @media screen and (max-width: 1300px) 
 {
   :root {
@@ -272,8 +279,14 @@ p {
     margin-right: 15vw;
   }
 
-  :root {
+  /* :root {
     --page-margin-side: 15vw;
+  } */
+  .page-more-wrapper {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
 }
