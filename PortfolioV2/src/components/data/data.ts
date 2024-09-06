@@ -73,15 +73,15 @@ import { IBox } from "../subcomponents/Box/Box";
         subTitle: "Sep 2023 - Jan 2024",
         tags: ["ROS", "Python", "Adobe CC", "Figma"],
         showIcon: true,
-        iconName: "p6-logo-2.png",
+        iconName: "subvision_logo.png",
     },
     {
         title: "Graphic Designer",
-        titleAddition: "UBC Vietnamese Student Association",
+        titleAddition: "UBC Vietnamese Student Society",
         subTitle: "Sep 2021 - Jun 2022",
         tags: ["Adobe CC"],
         showIcon: true,
-        iconName: "p6-logo-2.png",
+        iconName: "ubcvss_logo.jpg",
     }
 ] as IBox[];
 
