@@ -164,7 +164,8 @@ const clubsPageContent = {
             caption="Example posts made for club social media account."
         />,
         <ContentTitle>SFU SUBVISION</ContentTitle>,
-        <ContentImage src="images/temp/temp_s.png" />,
+        <ContentImage src="images/clubs/subvision_v1.png" />,
+        <ContentImage src="images/clubs/subvision_v2.png" />,
         <ContentTitle>SFU FINSA</ContentTitle>,
         <ContentImage src="images/temp/temp_s.png" />,
         <ContentTitle>UBC DATA SCIENCE CLUB</ContentTitle>,
