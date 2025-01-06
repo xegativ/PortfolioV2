@@ -1,11 +1,11 @@
 import { IBox } from "../subcomponents/Box/Box";
 
- const experienceData = [
+const experienceData = [
     {
         title: "Software Developer Intern",
         titleAddition: "Verzena",
         subTitle: "Aug 2024 - Present",
-     
+
         tags: ["React", "Tailwind", "Adobe CC", "Figma"],
         showIcon: true,
         iconName: "verzena.png",
@@ -18,9 +18,15 @@ import { IBox } from "../subcomponents/Box/Box";
             "Utilized a robust technology stack including the application of advanced React and TypeScript techniques, Electron.js, Node.js for server-side logic, and Redux for state management.",
             "Decreased loading times by up to 80% on data-intensive pages through strategic migration and caching of calculations on the main process.",
             "Implemented new features for cone-penetration analysis and improved graph interactions, including custom point labeling and improved graph scaling logic.",
-            
         ],
-        tags: ["React", "TypeScript", "Electron.js", "Redux", "Node.js", "Fluent UI"],
+        tags: [
+            "React",
+            "TypeScript",
+            "Electron.js",
+            "Redux",
+            "Node.js",
+            "Fluent UI",
+        ],
         showIcon: true,
         iconName: "conetec-icon.jpg",
     },
@@ -53,19 +59,17 @@ import { IBox } from "../subcomponents/Box/Box";
         title: "Junior Developer, Lead UI/UX",
         titleAddition: "UBC Data Science Club",
         subTitle: "Sep 2023 - Apr 2024",
-        tags: ["React", "Tailwind", "Trello","Adobe CC", "Figma"],
+        tags: ["React", "Tailwind", "Trello", "Adobe CC", "Figma"],
         showIcon: true,
         iconName: "dsci_logo.png",
-        
     },
     {
         title: "VP Technology, Design Coordinator",
         titleAddition: "SFU Finance Student Association",
         subTitle: "Sep 2023 - Apr 2024",
-        tags: ["WordPress", "CRM", "Adobe CC" ,"Figma"],
+        tags: ["WordPress", "CRM", "Adobe CC", "Figma"],
         showIcon: true,
         iconName: "finsa_logo.png",
-        
     },
     {
         title: "Software Engineer, VP Design",
@@ -82,25 +86,35 @@ import { IBox } from "../subcomponents/Box/Box";
         tags: ["Adobe CC"],
         showIcon: true,
         iconName: "ubcvss_logo.jpg",
-    }
+    },
 ] as IBox[];
 
 const projectData = [
     {
         title: "mySips v2",
         description:
-            "Revamped site focused on user accessibility; in progress.",
+            "Revamped site focused on user accessibility. Custom backend for data processing, firestore for data management, and the rest for receipt recognition.",
         tags: [
             "React",
             "TypeScript",
-            "HTML/CSS",
-            "Firebase",
-            "Redux",
-            "Tailwind"
+            "Cloud Firestore",
+            "Flask",
+            "React Query",
+            "Tailwind",
+            "Tesseract OCR",
+            "spaCy",
+            "OpenCV",
         ],
         showImage: true,
         imageName: "temp/temp.png",
-      
+    },
+    {
+        title: "Arithmetic Implementation",
+        description:
+            "Basic arithmetic system involving two signed 5 bit values (and 2 bit floating point in fractional bit representation), with loading and memory capabilities, on the DE10 Standard FPGA board.",
+        tags: ["Quartus 2", "VHDL", "ModelSim", "FPGA"],
+        showImage: true,
+        imageName: "temp/temp.png",
     },
     {
         title: "mySips",
@@ -117,7 +131,6 @@ const projectData = [
         ],
         showImage: true,
         imageName: "projects/mysips-proj-min.png",
-  
     },
     {
         title: "Devpost Scraper",
@@ -126,7 +139,6 @@ const projectData = [
         tags: ["Python", "spaCy", "NLP", "Flask"],
         showImage: true,
         imageName: "projects/devpost-proj-min.png",
-    
     },
     {
         title: "Portfolio v1",
@@ -135,7 +147,7 @@ const projectData = [
         tags: ["JavaScript", "HTML/CSS", "History API", "GSAP"],
         showImage: true,
         imageName: "projects/portfoliov1-proj-min.png",
-        urlLink: "https://andrewlai-v1.netlify.app/"       
+        urlLink: "https://andrewlai-v1.netlify.app/",
     },
     {
         title: "Pola Party",
@@ -144,7 +156,6 @@ const projectData = [
         tags: ["Python", "Flask", "PostgreSQL", "Docker", "Azure"],
         showImage: true,
         imageName: "projects/polaparty-proj-min.png",
-       
     },
     {
         title: "PCA 2024 & UBC DSCI Club",
@@ -153,7 +164,6 @@ const projectData = [
         tags: ["Typescript", "React", "Express", "Tailwind", "MUI"],
         showImage: true,
         imageName: "projects/ubcdsci-proj-min.png",
-   
     },
     {
         title: "Irrigation Estimator",
@@ -162,7 +172,6 @@ const projectData = [
         tags: ["Python", "Matplotlib", "Requests", "REST API"],
         showImage: true,
         imageName: "temp/temp.png",
-        
     },
     {
         title: "Crossy Road Matplotlib",
@@ -172,7 +181,6 @@ const projectData = [
         showImage: true,
         imageName: "temp/temp.png",
     },
-    
 ] as IBox[];
 
-export {projectData, experienceData};
+export { projectData, experienceData };

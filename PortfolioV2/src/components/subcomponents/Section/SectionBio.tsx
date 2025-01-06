@@ -29,10 +29,9 @@ function SectionBio({
                     opportunities to grow my technological skills and expertise.
                     <br></br>
                     <br></br>
-                    With a wide array of interests in topics such as&nbsp;
+                    With a wide-ish array of interests in topics such as&nbsp;
                     <span className="p-bold">
-                        startups, oceanography and geotechnical engineering,
-                        embedded systems, and computer architecture,
+                        startups, computer architecture, design, and art.
                     </span>{" "}
                     I am always putting work into learning about this
                     ever-changing world.
